@@ -50,7 +50,7 @@ const officers:Officer[] = [
 
 const Officers: React.FC<OfficersProps> = () => {
   return (
-    <div className="py-28 max-w-[1380px] px-10 mx-auto h-screen">
+    <div className="pt-28 max-w-[1380px] px-10 mx-auto pb-10">
       <h4 className="text-4xl font-medium text-center">Meet the Team</h4>
       <div className="flex flex-wrap gap-6 justify-center mt-16">
        {officers.map((officer, i) => (
