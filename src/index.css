@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("/fonts/metropolis-light.otf") format("opentype");
+  font-weight: 300; 
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("/fonts/metropolis-regular.otf") format("opentype");
+  font-weight: 400; 
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("/fonts/metropolis-medium.otf") format("opentype");
+  font-weight: 500; 
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("/fonts/metropolis-semibold.otf") format("opentype");
+  font-weight: 600; 
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("/fonts/metropolis-bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  overflow-x: hidden;
+  color: #202124;
+}
+
+
+.bs {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 6px 14px 0px;
+}
