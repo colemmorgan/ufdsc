@@ -26,7 +26,7 @@ const Contact: React.FC<ContactProps> = () => {
         () => {
           setEmailState("sent")
         },
-        (error) => {
+        () => {
           setEmailState("error")
         }
       );
