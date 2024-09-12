@@ -43,6 +43,9 @@ body {
   color: #202124;
 }
 
+:root {
+  scroll-behavior: smooth;
+}
 
 .bs {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 6px 14px 0px;

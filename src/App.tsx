@@ -1,5 +1,6 @@
 import About from "./components/About";
-import Faq from "./components/FAQ";
+import Contact from "./components/Contact";
+import Faq from "./components/Faq";
 import Features from "./components/Features";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -17,6 +18,7 @@ function App() {
       <SolutionChallenge/>
       <Officers/>
       <Faq/>
+      <Contact/>
       <Footer/>
     </>
   );

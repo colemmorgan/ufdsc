@@ -1,49 +1,59 @@
-import React from 'react';
+import React from "react";
 
-type FeaturesProps = {
-    
+const features = [
+  {
+    title: "Learn Real-World Technologies",
+    desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ut exercitationem modi odit fuga quaerat harum, debitis ratione tempore maxime.",
+    color: "#4285F4",
+  },
+  {
+    title: "Compete In Google Dev Competitions",
+    desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ut exercitationem modi odit fuga quaerat harum, debitis ratione tempore maxime.",
+    color: "#FBBC04",
+  },
+  {
+    title: "Collaborate With Other Students",
+    desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ut exercitationem modi odit fuga quaerat harum, debitis ratione tempore maxime.",
+    color: "#34A853",
+  },
+];
+
+const Features: React.FC = () => {
+  return (
+    <div className=" bg-off-white border-y-2 border-light-gray">
+      <div className="max-w-[1380px] mx-auto flex flex-col lg:flex-row h-full">
+        {features.map((feature, index) => (
+          <Feature
+            key={index}
+            title={feature.title}
+            desc={feature.desc}
+            color={feature.color}
+            index={index}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
+export default Features;
+
+type FeatureProps = {
+  title: string;
+  desc: string;
+  color: string;
+  index: number;
 };
 
-const Features:React.FC<FeaturesProps> = () => {
-    
-    return (
-        <div className=" bg-off-white border-y-2 border-light-gray">
-        <div className="max-w-[1380px] mx-auto flex h-full">
-          <div className="w-1/3 border-r-2 border-light-gray h-full px-10 py-12">
-            <p className="font-medium text-xl">Learn Real-World Technologies</p>
-            <div className="mt-2 w-20 h-1 bg-blue rounded-md" />
-            <p className="mt-6 font-light">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-              quaerat unde dolores itaque perferendis ducimus quo mollitia
-              necessitatibus, quos consequuntur.
-            </p>
-          </div>
-
-          <div className="w-1/3 border-r-2 border-light-gray h-full px-10 py-12">
-            <p className="font-medium text-xl">
-              Compete In Google Dev Competitions
-            </p>
-            <div className="mt-2 w-20 h-1 bg-yellow rounded-md" />
-            <p className="mt-6 font-light">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-              quaerat unde dolores itaque perferendis ducimus quo mollitia
-              necessitatibus, quos consequuntur.
-            </p>
-          </div>
-
-          <div className="w-1/3 h-full px-10 py-12">
-            <p className="font-medium text-xl">
-              Collaborate With Other Students
-            </p>
-            <div className="mt-2 w-20 h-1 bg-green rounded-md" />
-            <p className="mt-6 font-light">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-              quaerat unde dolores itaque perferendis ducimus quo mollitia
-              necessitatibus, quos consequuntur.
-            </p>
-          </div>
-        </div>
-      </div>
-    )
-}
-export default Features;
+const Feature: React.FC<FeatureProps> = ({ title, desc, color, index }) => {
+  return (
+    // Last Feature should not have a border to the right
+    <div className={`w-full lg:w-1/3 h-full px-6 lg:px-10 py-12 border-light-gray border-b-2 lg:border-b-0 ${index != 2 ? " lg:border-r-2" : ""}`}>
+      <p className="font-medium text-lg sm:text-xl">{title}</p>
+      <div
+        className="mt-2 w-20 h-1 rounded-md"
+        style={{ backgroundColor: color }}
+      />
+      <p className="mt-6  font-light leading-normal">{desc}</p>
+    </div>
+  );
+};

@@ -31,8 +31,8 @@ const faqs = [
 
 const Faq: React.FC = () => {
   return (
-    <div className="max-w-[1080px] px-10 mx-auto py-28 ">
-      <p className="font-medium text-2xl">Frequently Asked Questions</p>
+    <div className="max-w-[1180px] px-6 sm:px-10 mx-auto pt-24 pb-10 ">
+      <p className="font-medium text-xl sm:text-2xl">Frequently Asked Questions</p>
       <div className="mt-8">
       {faqs.map((faq,index) => (
         <FaqTab key={index} question={faq.question} answer={faq.answer}/>
@@ -52,14 +52,14 @@ type FaqTabProps = {
 const FaqTab: React.FC<FaqTabProps> = ({ question, answer }) => {
     const [isOpen, setIsOpen] = useState<boolean>(false)
   return (
-    <div className="w-full border-b border-gray pb-4 my-6">
+    <div className="w-full border-b border-gray pb-3 sm:pb-4 my-6">
       <div className="flex justify-between items-center">
-        <p className="font-medium text-lg">{question}</p>
-        <span className={`text-gray cursor-pointer ${isOpen ? "rotate-180" : ""} transition-all`} onClick={() => setIsOpen(!isOpen)}>
+        <p className="font-medium text-sm sm:text-lg text-button-blue pr-2">{question}</p>
+        <span className={`text-blue cursor-pointer ${isOpen ? "rotate-180" : ""} transition-all`} onClick={() => setIsOpen(!isOpen)}>
           <FaChevronDown />
         </span>
       </div>
-      {isOpen && <div className="mt-4 leading-relaxed">{answer}</div>}
+      {isOpen && <div className="mt-4 leading-relaxed text-sm sm:text-base">{answer}</div>}
     </div>
   );
 };
