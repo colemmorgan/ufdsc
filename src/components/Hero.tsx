@@ -18,7 +18,7 @@ const Hero: React.FC<HeroProps> = () => {
           </h2>
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 text-sm mb-4 mt-4 sm:mt-0">
             <a
-              href=""
+              href="#become-a-member"
               className="bg-button-blue text-white rounded-md w-full sm:w-[180px] text-center pt-1.5 pb-1"
             >
               Become A Member
