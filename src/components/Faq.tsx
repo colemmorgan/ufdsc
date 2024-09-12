@@ -10,7 +10,7 @@ const faqs = [
   {
     question: "Who should I reach out to if I have questions?",
     answer:
-      "No, but most projects require that you be willing to learn. All skill levels are welcome, our tech leads will often host workshops, share resources & advice, and provide all the help that you need to get started.",
+      "The quickest way to get in touch with the team is to reach out to an officer on discord. Otherwise, you can send us a message from the contact form below.",
   },
   {
     question: "How frequently do events and workshops occur?",
@@ -23,9 +23,9 @@ const faqs = [
       "You should bring a notebook, pen, laptop, and most importantly, a curious mind.",
   },
   {
-    question: "Do I need programming experience to join?",
+    question: "Why should I join?",
     answer:
-      "No, but most projects require that you be willing to learn. All skill levels are welcome, our tech leads will often host workshops, share resources & advice, and provide all the help that you need to get started.",
+      "Joining the UFDSC is a great way to gain experience for your CV and develop a strong project portfolio. Working on open source projects or leading a group as a tech-lead positively distinguishes you from other job applicants.",
   },
 ];
 

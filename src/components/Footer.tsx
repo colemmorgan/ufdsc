@@ -1,7 +1,6 @@
 import React from "react";
 import { IoLogoDiscord } from "react-icons/io5";
 import { FaInstagram } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa6";
 
 type FooterProps = {};
 
