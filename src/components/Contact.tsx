@@ -1,5 +1,6 @@
 import React, { FormEvent, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { LuLoader2 } from "react-icons/lu";
 
 type ContactProps = {};
 
@@ -13,6 +14,7 @@ const Contact: React.FC<ContactProps> = () => {
   const template = import.meta.env.VITE_EMAIL_TEMPLATE;
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+    setEmailState("loading")
     e.preventDefault();
     if (!form.current) return;
 
@@ -22,10 +24,10 @@ const Contact: React.FC<ContactProps> = () => {
       })
       .then(
         () => {
-          console.log("SUCCESS!");
+          setEmailState("sent")
         },
         (error) => {
-          console.log("FAILED...", error);
+          setEmailState("error")
         }
       );
   };
@@ -88,10 +90,13 @@ const Contact: React.FC<ContactProps> = () => {
             ></textarea>
           </div>
           <button
-            className="text-sm bg-button-blue text-white pt-2 pb-1.5 rounded-md"
+            className="text-sm bg-button-blue text-white pt-2 pb-1.5 rounded-md flex justify-center text-center"
             type="submit"
           >
-            Submit
+            {emailState === "loading" && <span className="animate-spin text-xl"><LuLoader2/></span>}
+            {emailState === "inactive" && "Submit"}
+            {emailState === "error" && "Error. Please contact us on Discord"}
+            {emailState === "sent" && "Success!. Feel free to send another message"}
           </button>
         </form>
       </div>
