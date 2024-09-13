@@ -4,7 +4,7 @@ type HeroProps = {};
 
 const Hero: React.FC<HeroProps> = () => {
   return (
-    <div className="max-w-[1380px] px-6 sm:px-10 mx-auto py-20 sm:py-28 mt-[68px]">
+    <div className="max-w-[1380px] px-6 sm:px-10 mx-auto py-16 sm:py-28 mt-[68px]">
       <div className="flex flex-col lg:flex-row justify-between items-center">
         <div className="lg:pr-4">
           <h1 className="text-center lg:text-left text-[32px] sm:text-5xl xl:text-[56px] 2xl:text-6xl font-semibold leading-[1.125] mb-4 lg:mb-2">
