@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Metropolis', 'Roboto', 'ui-sans-serif', 'system-ui'], 
+        sans: ['DM Sans', 'ui-sans-serif', 'system-ui'], 
       },
       colors: {
         'black': "#202124",

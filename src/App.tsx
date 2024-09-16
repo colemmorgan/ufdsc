@@ -13,7 +13,6 @@ function App() {
     <>
       <Nav />
       <Hero />
-      <Features />
       <About />
       <SolutionChallenge/>
       <Officers/>

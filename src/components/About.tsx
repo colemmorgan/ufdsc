@@ -6,7 +6,7 @@ const About: React.FC<AboutProps> = () => {
   return (
     <div className="py-28 max-w-[910px] mx-auto px-6 sm:px-10" id="become-a-member">
       <h3 className="font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-[56px] lg:leading-[1.125] text-center">
-        Becoming a member is as easy as joining our discord!
+        Becoming a <span className="text-green">member</span> is as easy as joining our <span className="text-blue">discord!</span>
       </h3>
       <div className="mt-8 flex justify-center gap-4 text-sm">
         <a
