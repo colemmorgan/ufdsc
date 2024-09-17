@@ -12,7 +12,7 @@ const SolutionChallenge: React.FC<SolutionChallengeProps> = () => {
         <p className="text-2xl sm:text-4xl font-medium">
           What is the Google DSC Solution Challenge?
         </p>
-        <div className="flex flex-col gap-4 mt-6 leading-relaxed">
+        <div className="flex flex-col gap-4 mt-6 text-lg leading-relaxed">
           <p className="">
             The Solution Challenge is a contest held in the spring where DSCs
             create innovative solutions to local community problems using Google

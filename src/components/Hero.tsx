@@ -40,10 +40,10 @@ const Hero: React.FC<HeroProps> = () => {
         </div>
       </div>
       <Grid />
-      <figure className="max-w-[460px] h-[347px]   mt-12 mx-auto px-6 relative">
+      <figure className="max-w-[460px] h-[320px] sm:h-[347px] mt-12 mx-auto px-6 relative">
           <img src="/photos/hero-graphic.png" alt="" className="w-full" />
         </figure>
-      <div className="max-w-[408px] mx-auto mt-8 sm:mt-16">
+      <div className="max-w-[408px] mx-auto mt-2 sm:mt-16">
         <div className="flex items-center justify-center gap-4 mb-4">
           <img src="/google.webp" alt="" className="w-[30px] grayscale" />
           <img src="/uf.png" alt="" className="w-[40px] grayscale" />

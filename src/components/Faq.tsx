@@ -31,7 +31,7 @@ const faqs = [
 
 const Faq: React.FC = () => {
   return (
-    <div className="max-w-[1180px] px-6 sm:px-10 mx-auto pt-24 pb-10 ">
+    <div className="max-w-[1180px] px-6 sm:px-10 mx-auto pt-24 pb-10" id="faq">
       <p className="font-medium text-xl sm:text-2xl">Frequently Asked Questions</p>
       <div className="mt-8">
       {faqs.map((faq,index) => (
@@ -54,7 +54,7 @@ const FaqTab: React.FC<FaqTabProps> = ({ question, answer }) => {
   return (
     <div className="w-full border-b border-gray pb-3 sm:pb-4 my-6">
       <div className="flex justify-between items-center">
-        <p className="font-medium text-sm sm:text-lg text-button-blue pr-2">{question}</p>
+        <p className="font-medium text-sm sm:text-lg text-button-blue pr-2 cursor-pointer" onClick={() => setIsOpen(!isOpen)}>{question}</p>
         <span className={`text-blue cursor-pointer ${isOpen ? "rotate-180" : ""} transition-all`} onClick={() => setIsOpen(!isOpen)}>
           <FaChevronDown />
         </span>

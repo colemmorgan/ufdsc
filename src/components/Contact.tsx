@@ -33,7 +33,7 @@ const Contact: React.FC<ContactProps> = () => {
   };
 
   return (
-    <div className="max-w-[1180px] mx-auto  pt-10 pb-32 sm:pb-44 ">
+    <div className="max-w-[1180px] mx-auto  pt-10 pb-32 sm:pb-44" id="contact">
       <div className="">
         <div className="px-6 sm:px-10">
           <p className="text-2xl sm:text-3xl font-medium">Contact</p>

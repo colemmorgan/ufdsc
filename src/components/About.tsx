@@ -29,29 +29,8 @@ const About: React.FC<AboutProps> = () => {
             Follow on IG
           </a>
         </div>
-
-        {/* <div className="pt-28" id="about">
-        <p className="text-3xl sm:text-4xl font-medium"><i>Developer Student Club</i></p>
-        <div className="font-light sm:text-lg leading-loose">
-          <p className="mt-6 ">
-            UFDSC is a project-based club focused on helping students improve their project development
-            skills. Our goal is for our members to become familiar with how a
-            full-stack application is made and help them create their own!
-            Whether you're a complete beginner or have some experience, we can
-            match you with teams and provide the support you need to develop
-            your full-stack skills and work on your own projects!
-          </p>
-          <p className="mt-4">
-            We use a wide variety of technologies such as android
-            development, web development, cloud computing and machine learning.
-            Every spring we put these technologies together to compete in the
-            Google DSC Solution Challenge. Find more on the solution challenge
-            below.
-          </p>
-        </div>
-      </div> */}
       </div>
-      <section id="about" className="pt-28 pb-24 max-w-[1400px] mx-auto sm:px-10">
+      <section id="about" className="py-24 max-w-[1400px] mx-auto sm:px-10">
         <div className="flex justify-between pb-3 border-b border-[#cccccc] px-4 sm:px-0">
           <p className="text-2xl sm:text-4xl lg:text-5xl font-medium">
             <span className="hidden sm:inline">UF</span> Developer Student Club
@@ -61,10 +40,10 @@ const About: React.FC<AboutProps> = () => {
         <div className="pt-8 sm:pt-16 max-w-[940px] mx-auto px-6 sm:px-10">
           <div className="relative">
             <img src="/star.svg" alt="" className="absolute top-2.5 -left-12 idden sm:block" />
-            <p className="text-2xl lg:text-[40px] leading-tight">
-              UFDSC is a <i className="text-gradient">project-based</i>{" "}
+            <p className="text-2xl lg:text-[40px] leading-tight text-center sm:text-left">
+              UFDSC is a <i className="text-gradient px-[1px]">project-based</i>{" "}
               club focused on helping students improve their{" "}
-              <i className="text-gradient">project development</i> skills.
+              <i className="text-gradient px-[1px]">project development</i> skills.
             </p>
             <img src="/star.svg" alt="" className="absolute bottom-2.5 -right-2 hidden sm:block" />
           </div>
