@@ -56,8 +56,8 @@ const officers: Officer[] = [
 
 const Officers: React.FC<OfficersProps> = () => {
   return (
-    <div className="pt-14 sm:pt-28 max-w-[1380px]  mx-auto pb-4 sm:pb-10" id="officers">
-       <div className="flex justify-between pb-3 border-b border-[#cccccc] px-4 sm:px-0">
+    <div className="pt-24 sm:pt-28 max-w-[1380px]  mx-auto pb-4 sm:pb-10" id="officers">
+       <div className="flex justify-between pb-3 border-b border-[#cccccc] px-10 sm:px-4">
           <p className="text-2xl sm:text-4xl font-medium">
             Meet the Team
           </p>

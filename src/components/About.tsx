@@ -30,22 +30,20 @@ const About: React.FC<AboutProps> = () => {
           </a>
         </div>
       </div>
-      <section id="about" className="py-24 max-w-[1400px] mx-auto sm:px-10">
+      <section id="about" className="pt-28 pb-20 max-w-[1400px] mx-auto sm:px-10">
         <div className="flex justify-between pb-3 border-b border-[#cccccc] px-4 sm:px-0">
           <p className="text-2xl sm:text-4xl lg:text-5xl font-medium">
             <span className="hidden sm:inline">UF</span> Developer Student Club
           </p>
           <img src="/star.svg" className="" />
         </div>
-        <div className="pt-8 sm:pt-16 max-w-[940px] mx-auto px-6 sm:px-10">
+        <div className="pt-8 sm:pt-16 max-w-[1000px] mx-auto px-6 sm:px-10">
           <div className="relative">
-            <img src="/star.svg" alt="" className="absolute top-2.5 -left-12 idden sm:block" />
-            <p className="text-2xl lg:text-[40px] leading-tight text-center sm:text-left">
-              UFDSC is a <i className="text-gradient px-[1px]">project-based</i>{" "}
+            <p className="text-2xl lg:text-[42px] leading-tight text-center sm:text-left">
+              UFDSC is a <i className="text-gradient px-[1px] font-medium">project-based</i>{" "}
               club focused on helping students improve their{" "}
-              <i className="text-gradient px-[1px]">project development</i> skills.
+              <i className="text-gradient px-[1px] font-medium">development skills.</i> 
             </p>
-            <img src="/star.svg" alt="" className="absolute bottom-2.5 -right-2 hidden sm:block" />
           </div>
          <div className="text-lg leading-loose">
          <p className="mt-12">Our goal is for our members to become familiar with how a

@@ -1,11 +1,12 @@
 import { AnimatePresence, motion } from "framer-motion";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import { IoIosClose } from "react-icons/io";
 import { IoMenu } from "react-icons/io5";
 
+
 const navTabs = [
   {
-    content: "Join Discord  / Become a Member",
+    content: "Join Discord",
     isLink: true,
     src: "https://discord.gg/b4GzPB36xy",
   },
@@ -17,14 +18,7 @@ const navTabs = [
 
 const Nav: React.FC = () => {
   const [showPopoutNav, setShowPopoutNav] = useState<boolean>(false);
-  const [popoutHeight, setPopoutHeight] = useState<number>(0);
-  const popoutRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (popoutRef?.current) {
-      setPopoutHeight(popoutRef.current.scrollHeight);
-    }
-  }, [showPopoutNav]);
+  
 
   return (
     <nav className="shadow-nav bg-white fixed top-0 left-0 right-0 z-20">
@@ -61,13 +55,12 @@ const Nav: React.FC = () => {
       <AnimatePresence initial={false}>
         {showPopoutNav && (
           <motion.div
-            ref={popoutRef}
-            className="flex flex-col text-xl sm:text-3xl lg:text-4xl font-light"
-            initial={{ height: 0 }}
-            animate={{ height: popoutHeight }}
-            exit={{ height: 0 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-            style={{ overflow: "hidden" }}
+            className="flex flex-col text-xl sm:text-3xl lg:text-4xl font-light overflow-hidden"
+            initial={{height: 0}}
+            animate={{height: "auto"}}
+            exit={{height: 0}}
+            transition={{duration: 0.3, ease: "easeInOut"}}
+         
           >
             {navTabs.map((tab, i) => (
               <NavTab

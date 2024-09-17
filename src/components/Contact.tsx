@@ -33,11 +33,14 @@ const Contact: React.FC<ContactProps> = () => {
   };
 
   return (
-    <div className="max-w-[1180px] mx-auto  pt-10 pb-32 sm:pb-44" id="contact">
+    <div className="max-w-[1360px] mx-auto  pt-24 pb-32 sm:pb-44" id="contact">
       <div className="">
         <div className="px-6 sm:px-10">
-          <p className="text-2xl sm:text-3xl font-medium">Contact</p>
-          <p className="leading-relaxed mt-3 text-sm sm:text-lg">
+          <div className="flex justify-between pb-4 border-b border-[#cccccc]">
+          <p className="text-2xl sm:text-4xl font-medium">Reach Out!</p>
+          <img src="/star.svg" alt="" />
+          </div>
+          <p className="leading-relaxed mt-6 text-sm sm:text-xl">
             We're here to help! If you have any questions, suggestions, or
             comments about the UFDSC, please feel free to reach out to us using
             the contact form below. Otherwise, you can reach out to an officer
@@ -51,7 +54,7 @@ const Contact: React.FC<ContactProps> = () => {
           onSubmit={sendEmail}
         >
           <div className="">
-            <label htmlFor="email" className="text-sm">
+            <label htmlFor="email" className="text-sm sm:text-lg">
               Email Address
             </label>
             <input
@@ -59,12 +62,12 @@ const Contact: React.FC<ContactProps> = () => {
               type="email"
               name="user_email"
               required
-              className="w-full border-b border-gray mt-1 py-1 outline-none "
+              className="w-full border-b border-gray mt-1 py-1 sm:py-2 outline-none sm:text-lg"
               placeholder="email@email.com"
             />
           </div>
           <div className="">
-            <label htmlFor="username" className="text-sm">
+            <label htmlFor="username" className="text-sm sm:text-lg">
               Name
             </label>
             <input
@@ -72,25 +75,25 @@ const Contact: React.FC<ContactProps> = () => {
               id="username"
               name="user_name"
               required
-              className="w-full border-b border-gray mt-1 py-1 outline-none "
+              className="w-full border-b border-gray mt-1 py-1 sm:py-2 outline-none sm:text-lg"
               placeholder="John Doe"
             />
           </div>
           <div className="">
-            <label htmlFor="message" className="text-sm">
+            <label htmlFor="message" className="text-sm sm:text-lg">
               Message
             </label>
             <textarea
               name="message"
               required
               id="message"
-              className="w-full border-b border-gray mt-1 py-1 outline-none resize-none"
+              className="w-full border-b border-gray mt-1 py-1 sm:py-2 outline-none resize-none sm:text-lg"
               rows={1}
               placeholder="Your message here"
             ></textarea>
           </div>
           <button
-            className="text-sm bg-button-blue text-white pt-2 pb-1.5 rounded-md flex justify-center text-center"
+            className="text-sm bg-button-blue text-white py-1.5 sm:py-2 rounded-md flex justify-center text-center"
             type="submit"
           >
             {emailState === "loading" && <span className="animate-spin text-xl"><LuLoader2/></span>}

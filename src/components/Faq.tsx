@@ -1,3 +1,4 @@
+import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
 import { FaChevronDown } from "react-icons/fa6";
 
@@ -31,14 +32,23 @@ const faqs = [
 
 const Faq: React.FC = () => {
   return (
-    <div className="max-w-[1180px] px-6 sm:px-10 mx-auto pt-24 pb-10" id="faq">
-      <p className="font-medium text-xl sm:text-2xl">Frequently Asked Questions</p>
-      <div className="mt-8">
-      {faqs.map((faq,index) => (
-        <FaqTab key={index} question={faq.question} answer={faq.answer}/>
-      ))}
+    <section className="pt-28 pb-10" id="faq">
+      <div className="flex justify-between pb-3 px-4 sm:px-10 max-w-[1360px] mx-auto mb-4">
+        <p className="text-xl sm:text-2xl lg:text-4xl font-medium">
+          Frequently Asked Questions
+        </p>
+        <img src="/star.svg" className="" />
       </div>
-    </div>
+      <div className="border-b border-[#cccccc]">
+        {faqs.map((faq) => (
+          <FaqTab
+            key={faq.question}
+            question={faq.question}
+            answer={faq.answer}
+          />
+        ))}
+      </div>
+    </section>
   );
 };
 
@@ -50,16 +60,39 @@ type FaqTabProps = {
 };
 
 const FaqTab: React.FC<FaqTabProps> = ({ question, answer }) => {
-    const [isOpen, setIsOpen] = useState<boolean>(false)
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <div className="w-full border-b border-gray pb-3 sm:pb-4 my-6">
-      <div className="flex justify-between items-center">
-        <p className="font-medium text-sm sm:text-lg text-button-blue pr-2 cursor-pointer" onClick={() => setIsOpen(!isOpen)}>{question}</p>
-        <span className={`text-blue cursor-pointer ${isOpen ? "rotate-180" : ""} transition-all`} onClick={() => setIsOpen(!isOpen)}>
-          <FaChevronDown />
-        </span>
+    <div
+      className={`border-t border-[#cccccc] py-6 sm:py-7 ${
+        isOpen ? "hover:bg-blue hover:bg-opacity-10" : "hover:bg-light-gray"
+      } cursor-pointer transition-all`}
+      onClick={() => setIsOpen(!isOpen)}
+    >
+      <div className="max-w-[1360px] mx-auto px-6 sm:px-10">
+        <div className={`flex justify-between items-center `}>
+          <p className="pr-8 text-lg sm:text-2xl ">{question}</p>
+          <span
+            className={`text-xl sm:text-2xl ${
+              isOpen && "rotate-180"
+            } transition-all`}
+          >
+            <FaChevronDown />
+          </span>
+        </div>
+        <AnimatePresence initial={false}>
+          {isOpen && (
+            <motion.p
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "auto", opacity: 1}}
+              exit={{ height: 0, opacity:0}}
+              transition={{ duration: 0.2,  }}
+              className={`md:text-lg lg:text-xl font-light leading-relaxed mt-4`}
+            >
+              {answer}
+            </motion.p>
+          )}
+        </AnimatePresence>
       </div>
-      {isOpen && <div className="mt-4 leading-relaxed text-sm sm:text-base">{answer}</div>}
     </div>
   );
 };

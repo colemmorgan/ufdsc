@@ -8,9 +8,6 @@ body {
   color: #202124;
 }
 
-:root {
-  scroll-behavior: smooth;
-}
 
 .bs {
   box-shadow: #6A9FF944 0px 6px 14px 0px;
