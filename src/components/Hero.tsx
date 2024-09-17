@@ -9,53 +9,50 @@ const Hero: React.FC<HeroProps> = () => {
       <Elipse />
       <Elipse2 />
       <Elipse3 />
-      <div className="max-w-[1380px] mx-auto pt-40 flex flex-col items-center text-center  mb-60 relative z-10">
+      <div className="max-w-[1380px] mx-auto pt-28 sm:pt-40 flex flex-col items-center text-center mb-4 sm:mb-12 relative z-10 px-6 sm:px-10">
         <div className="gradient-border rounded-full overflow-hidden">
-          <p className="bg-white rounded-full py-1 px-4 text-sm flex items-center gap-1 font-medium">
+          <p className="bg-white rounded-full py-1 px-4 text-xs sm:text-sm flex items-center gap-1 font-medium">
             <span className="text-base text-blue">
               <IoLocationSharp />
             </span>{" "}
             University of Florida
           </p>
         </div>
-        <h1 className="text-6xl font-semibold mt-6">Developer Student Club</h1>
-        <h2 className="max-w-[700px] font-medium mt-4 text-xl">
+        <h1 className="text-[44px] leading-[1.125] sm:text-6xl font-semibold mt-4 sm:mt-6"> <span className="sm:hidden">UF</span> Developer Student Club</h1>
+        <h2 className="max-w-[700px] font-medium mt-3 sm:mt-4  sm:text-xl">
           Learn <span className="text-button-blue">Google Developer</span>{" "}
           technologies as well as mobile and web development skills essential
           for the <span className="text-green">industry.</span>
         </h2>
-        <div className="flex mt-4 gap-4 text-sm">
+        <div className="flex flex-col sm:flex-row mt-4 gap-4 text-sm w-full justify-center">
           <a
-            className="bg-button-blue text-white rounded-md w-44 py-1.5"
+            className="bg-button-blue text-white rounded-md w-full block sm:w-44 py-1.5"
             href="#become-a-member"
           >
             Become a Member
           </a>
           <a
-            className="border border-gray text-button-blue bg-white rounded-md w-44 py-1.5"
+            className="border border-[#cccccc] text-button-blue bg-white rounded-md w-full sm:w-44 py-1.5"
             href="#about"
           >
             Learn More
           </a>
         </div>
       </div>
-      <Grid/>
-      {/* <div className="bg-white w-[800px] mx-auto rounded-xl border border-light-gray h-96 bs p-10 flex justify-center relative overflow-hidden">
-        <img src="/photos/solution-challenge.png" alt="" className="h-full"/>
-        <div className="absolute bottom-0 w-full h-24 bg-black bg-opacity-80 px-10 py-2 flex items-center text-white">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae incidunt vel qui sit tempora ipsam molestiae, doloremque rem totam est!</p>
-        </div>
-      </div> */}
-
-      <div className="max-w-[408px] mx-auto mt-[440px]">
+      <Grid />
+      <figure className="max-w-[460px] h-[347px]   mt-12 mx-auto px-6 relative">
+          <img src="/photos/hero-graphic.png" alt="" className="w-full" />
+        </figure>
+      <div className="max-w-[408px] mx-auto mt-8 sm:mt-16">
         <div className="flex items-center justify-center gap-4 mb-4">
           <img src="/google.webp" alt="" className="w-[30px] grayscale" />
           <img src="/uf.png" alt="" className="w-[40px] grayscale" />
         </div>
-        <p className="text-gray text-sm text-center">
+        <p className="text-gray text-xs sm:text-sm text-center">
           A Google Developers program for university students
         </p>
       </div>
+     
     </>
   );
 };
@@ -69,7 +66,7 @@ const Elipse: React.FC = () => {
       viewBox="0 0 1800 275"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="absolute  left-1/2 -translate-x-1/2 w-full  overflow-hidden"
+      className="absolute  left-1/2 -translate-x-1/2 top-0 hidden sm:block w-full  overflow-hidden"
     >
       <g filter="url(#filter0_f_45_112)">
         <path
@@ -123,7 +120,7 @@ const Elipse2: React.FC = () => {
       viewBox="0 0 364 652"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="absolute right-0 top-1/2 -translate-y-1/4"
+      className="absolute hidden sm:block right-0 top-1/2 -translate-y-1/4"
     >
       <g filter="url(#filter0_f_45_125)" className="rounded-full">
         <ellipse
@@ -171,7 +168,7 @@ const Elipse3: React.FC = () => {
       viewBox="0 0 433 528"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="absolute left-0 top-[20%]"
+      className="absolute left-0 top-[20%] hidden sm:block"
     >
       <g filter="url(#filter0_f_45_123)">
         <ellipse
@@ -213,76 +210,82 @@ const Elipse3: React.FC = () => {
 const Grid: React.FC = () => {
   return (
     <svg
-    width="1314"
-    height="1314"
-    viewBox="0 0 1314 1314"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className="absolute left-1/2 top-[63%] -translate-x-1/2 -translate-y-1/2"
-  >
-    <mask
-      id="mask0_56_161"
-      style={{ maskType: 'alpha' }}
-      maskUnits="userSpaceOnUse"
-      x="0"
-      y="0"
       width="1314"
       height="1314"
+      viewBox="0 0 1314 1314"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className="absolute left-1/2 top-[63%] -translate-x-1/2 -translate-y-1/2 hidden sm:block"
     >
-      <rect width="1314" height="1314" fill="url(#paint0_radial_56_161)" />
-      {[221.17, 300.341, 379.511, 458.682, 537.852, 617.023, 696.193, 775.364, 854.534, 933.705, 1012.88, 1092.05].map((x, index) => (
-        <rect
-          key={`vertical-${index}`}
-          x={x}
-          y="168.651"
-          width="0.783866"
-          height="976.697"
-          fill="#D9D9D9"
-        />
-      ))}
-      {[142, 221.171, 300.341, 379.511, 458.682, 537.852, 617.023, 696.193, 775.364, 854.534, 933.705, 1012.88, 1092.05, 1171.22].map((y, index) => (
-        <rect
-          key={`horizontal-${index}`}
-          x="1145.35"
-          y={y}
-          width="0.783866"
-          height="976.697"
-          transform={`rotate(90 1145.35 ${y})`}
-          fill="#D9D9D9"
-        />
-      ))}
-    </mask>
-    <g mask="url(#mask0_56_161)">
-      <path
-        opacity="0.5"
-        d="M1255.65 616.5C1255.65 947.871 987.026 1216.5 655.655 1216.5C324.284 1216.5 55.6548 947.871 55.6548 616.5C55.6548 285.129 324.284 16.5 655.655 16.5C987.026 16.5 1255.65 285.129 1255.65 616.5Z"
-        fill="url(#paint1_radial_56_161)"
-      />
-    </g>
-    <defs>
-      <radialGradient
-        id="paint0_radial_56_161"
-        cx="0"
-        cy="0"
-        r="1"
-        gradientUnits="userSpaceOnUse"
-        gradientTransform="translate(657 657) rotate(90) scale(490.012)"
+      <mask
+        id="mask0_56_161"
+        style={{ maskType: "alpha" }}
+        maskUnits="userSpaceOnUse"
+        x="0"
+        y="0"
+        width="1314"
+        height="1314"
       >
-        <stop stopColor="#202124" stopOpacity="0.37" />
-        <stop offset="1" stopColor="#202124" stopOpacity="0" />
-      </radialGradient>
-      <radialGradient
-        id="paint1_radial_56_161"
-        cx="0"
-        cy="0"
-        r="1"
-        gradientUnits="userSpaceOnUse"
-        gradientTransform="translate(657 657) rotate(90) scale(447.5)"
-      >
-        <stop stopColor="#9AA0A6" />
-        <stop offset="1" stopColor="#9AA0A6" stopOpacity="0" />
-      </radialGradient>
-    </defs>
-  </svg>
+        <rect width="1314" height="1314" fill="url(#paint0_radial_56_161)" />
+        {[
+          221.17, 300.341, 379.511, 458.682, 537.852, 617.023, 696.193, 775.364,
+          854.534, 933.705, 1012.88, 1092.05,
+        ].map((x, index) => (
+          <rect
+            key={`vertical-${index}`}
+            x={x}
+            y="168.651"
+            width="0.783866"
+            height="976.697"
+            fill="#D9D9D9"
+          />
+        ))}
+        {[
+          142, 221.171, 300.341, 379.511, 458.682, 537.852, 617.023, 696.193,
+          775.364, 854.534, 933.705, 1012.88, 1092.05, 1171.22,
+        ].map((y, index) => (
+          <rect
+            key={`horizontal-${index}`}
+            x="1145.35"
+            y={y}
+            width="0.783866"
+            height="976.697"
+            transform={`rotate(90 1145.35 ${y})`}
+            fill="#D9D9D9"
+          />
+        ))}
+      </mask>
+      <g mask="url(#mask0_56_161)">
+        <path
+          opacity="0.5"
+          d="M1255.65 616.5C1255.65 947.871 987.026 1216.5 655.655 1216.5C324.284 1216.5 55.6548 947.871 55.6548 616.5C55.6548 285.129 324.284 16.5 655.655 16.5C987.026 16.5 1255.65 285.129 1255.65 616.5Z"
+          fill="url(#paint1_radial_56_161)"
+        />
+      </g>
+      <defs>
+        <radialGradient
+          id="paint0_radial_56_161"
+          cx="0"
+          cy="0"
+          r="1"
+          gradientUnits="userSpaceOnUse"
+          gradientTransform="translate(657 657) rotate(90) scale(490.012)"
+        >
+          <stop stopColor="#202124" stopOpacity="0.37" />
+          <stop offset="1" stopColor="#202124" stopOpacity="0" />
+        </radialGradient>
+        <radialGradient
+          id="paint1_radial_56_161"
+          cx="0"
+          cy="0"
+          r="1"
+          gradientUnits="userSpaceOnUse"
+          gradientTransform="translate(657 657) rotate(90) scale(447.5)"
+        >
+          <stop stopColor="#9AA0A6" />
+          <stop offset="1" stopColor="#9AA0A6" stopOpacity="0" />
+        </radialGradient>
+      </defs>
+    </svg>
   );
 };

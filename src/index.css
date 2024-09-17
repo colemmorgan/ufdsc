@@ -20,3 +20,10 @@ body {
   padding: 1px;
   background: linear-gradient(45deg, #6A9FF966, #57C66A66);
 }
+
+.text-gradient {
+  background: linear-gradient(90deg,#6A9FF9, #57C66A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

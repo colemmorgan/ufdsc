@@ -56,9 +56,14 @@ const officers: Officer[] = [
 
 const Officers: React.FC<OfficersProps> = () => {
   return (
-    <div className="pt-28 max-w-[1380px] px-6 sm:px-10 mx-auto pb-10" id="officers">
-      <h4 className="text-3xl sm:text-4xl font-medium text-center">Meet the Team</h4>
-      <div className="flex flex-wrap gap-6 justify-center mt-16">
+    <div className="pt-14 sm:pt-28 max-w-[1380px]  mx-auto pb-4 sm:pb-10" id="officers">
+       <div className="flex justify-between pb-3 border-b border-[#cccccc] px-4 sm:px-0">
+          <p className="text-2xl sm:text-4xl lg:text-5xl font-medium">
+            Meet the Team
+          </p>
+          <img src="/star.svg" className="" />
+        </div>
+      <div className="flex flex-wrap gap-6 justify-center mt-16 px-6 sm:px-10">
         {officers.map((officer, i) => (
           <OfficerDesc officer={officer} key={i} />
         ))}
