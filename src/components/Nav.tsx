@@ -6,7 +6,7 @@ import { IoMenu } from "react-icons/io5";
 
 const navTabs = [
   {
-    content: "Join Discord",
+    content: "Join Our Discord",
     isLink: true,
     src: "https://discord.gg/b4GzPB36xy",
   },

@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   color: #202124;
 }
 
@@ -23,4 +23,8 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+.bg {
+  background: linear-gradient(90deg,#6A9FF9, #57C66A);
 }

@@ -79,7 +79,7 @@ type OfficerProps = {
 
 const OfficerDesc: React.FC<OfficerProps> = ({ officer }) => {
   return (
-    <div className="p-8 bg-white bs border border-light-gray flex flex-col items-center rounded-md sm:max-w-[272px] w-full">
+    <div className="p-8 bg-white bg-opacity-35 relative backdrop-blur-xl bs border border-light-gray flex flex-col items-center rounded-md sm:max-w-[272px] w-full">
       <figure className="h-24 w-24 rounded-full border-[4px] border-blue bg-light-gray">
         <img
           src={officer.img}

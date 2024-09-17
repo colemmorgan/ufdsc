@@ -40,7 +40,7 @@ const Hero: React.FC<HeroProps> = () => {
         </div>
       </div>
       <Grid />
-      <figure className="max-w-[460px] h-[320px] sm:h-[347px] mt-12 mx-auto px-6 relative">
+      <figure className="max-w-[460px] h-[320px] sm:h-[347px] mt-16 mx-auto px-6 relative">
           <img src="/photos/hero-graphic.png" alt="" className="w-full" />
         </figure>
       <div className="max-w-[408px] mx-auto mt-2 sm:mt-16">
@@ -215,7 +215,7 @@ const Grid: React.FC = () => {
       viewBox="0 0 1314 1314"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="absolute left-1/2 top-[63%] -translate-x-1/2 -translate-y-1/2 hidden sm:block"
+      className="absolute left-1/2 top-[63%] -translate-x-1/2 -translate-y-1/2 hidden sm:block max-w-[1003px] overflow-hidden"
     >
       <mask
         id="mask0_56_161"
