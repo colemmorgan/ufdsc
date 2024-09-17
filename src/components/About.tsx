@@ -30,7 +30,7 @@ const About: React.FC<AboutProps> = () => {
           </a>
         </div>
       </div>
-      <section id="about" className="pt-28 pb-20 max-w-[1400px] mx-auto sm:px-10">
+      <section id="about" className="pt-28 pb-16 max-w-[1400px] mx-auto sm:px-10">
         <div className="flex justify-between pb-3 border-b border-[#cccccc] px-4 sm:px-0">
           <p className="text-2xl sm:text-4xl lg:text-5xl font-medium">
             <span className="hidden sm:inline">UF</span> Developer Student Club
@@ -39,14 +39,14 @@ const About: React.FC<AboutProps> = () => {
         </div>
         <div className="pt-8 sm:pt-16 max-w-[1000px] mx-auto px-6 sm:px-10">
           <div className="relative">
-            <p className="text-2xl lg:text-[42px] leading-tight text-center sm:text-left">
+            <p className="text-[25px] lg:text-[42px] leading-tight text-center sm:text-left">
               UFDSC is a <i className="text-gradient px-[1px] font-medium">project-based</i>{" "}
               club focused on helping students improve their{" "}
               <i className="text-gradient px-[1px] font-medium">development skills.</i> 
             </p>
           </div>
          <div className="text-lg leading-loose">
-         <p className="mt-12">Our goal is for our members to become familiar with how a
+         <p className="mt-8 sm:mt-12">Our goal is for our members to become familiar with how a
             full-stack application is made and help them create their own!
             Whether you're a complete beginner or have some experience, we can
             match you with teams and provide the support you need to develop

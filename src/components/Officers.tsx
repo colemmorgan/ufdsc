@@ -63,7 +63,7 @@ const Officers: React.FC<OfficersProps> = () => {
           </p>
           <img src="/star.svg" className="" />
         </div>
-      <div className="flex flex-wrap gap-6 justify-center mt-16 px-6 sm:px-10">
+      <div className="flex flex-wrap gap-6 justify-center mt-12 sm:mt-16 px-6 sm:px-10">
         {officers.map((officer, i) => (
           <OfficerDesc officer={officer} key={i} />
         ))}

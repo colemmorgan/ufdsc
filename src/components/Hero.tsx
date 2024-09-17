@@ -18,7 +18,7 @@ const Hero: React.FC<HeroProps> = () => {
             University of Florida
           </p>
         </div>
-        <h1 className="text-[44px] leading-[1.125] sm:text-6xl font-semibold mt-4 sm:mt-6"> <span className="sm:hidden">UF</span> Developer Student Club</h1>
+        <h1 className="text-[48px] leading-[1.125] sm:text-6xl font-semibold mt-4 sm:mt-6"> <span className="sm:hidden">UF</span> Developer Student Club</h1>
         <h2 className="max-w-[700px] font-medium mt-3 sm:mt-4  sm:text-xl">
           Learn <span className="text-button-blue">Google Developer</span>{" "}
           technologies as well as mobile and web development skills essential

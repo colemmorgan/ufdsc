@@ -32,7 +32,7 @@ const faqs = [
 
 const Faq: React.FC = () => {
   return (
-    <section className="pt-28 pb-10" id="faq">
+    <section className="pt-28 sm:pb-10" id="faq">
       <div className="flex justify-between pb-3 px-4 sm:px-10 max-w-[1360px] mx-auto mb-4">
         <p className="text-xl sm:text-2xl lg:text-4xl font-medium">
           Frequently Asked Questions
