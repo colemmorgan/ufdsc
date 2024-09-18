@@ -5,7 +5,7 @@ type SolutionChallengeProps = {};
 const SolutionChallenge: React.FC<SolutionChallengeProps> = () => {
   return (
     <div className="max-w-[1000px] mx-auto px-6 sm:px-10 ">
-      <p className="text-2xl sm:text-4xl font-medium mb-8">
+      <p className="text-xl sm:text-4xl font-medium mb-8">
         What is the Google DSC Solution Challenge?
       </p>
       <figure className="">

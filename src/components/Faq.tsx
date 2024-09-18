@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
 import { FaChevronDown } from "react-icons/fa6";
 
+
 const faqs = [
   {
     question: "Do I need programming experience to join?",
@@ -39,7 +40,7 @@ const Faq: React.FC = () => {
         </p>
         <img src="/star.svg" className="" />
       </div>
-      <div className="border-b border-[#cccccc]">
+      <div className="border-b border-[#dddddd]">
         {faqs.map((faq) => (
           <FaqTab
             key={faq.question}
@@ -63,7 +64,7 @@ const FaqTab: React.FC<FaqTabProps> = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
     <div
-      className={`border-t border-[#cccccc] py-5 sm:py-6 ${
+      className={`border-t border-[#dddddd] py-5 sm:py-6 ${
         isOpen ? "" : "hover:bg-light-gray"
       } cursor-pointer transition-all`}
       onClick={() => setIsOpen(!isOpen)}
