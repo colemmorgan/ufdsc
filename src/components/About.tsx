@@ -6,7 +6,7 @@ const About: React.FC<AboutProps> = () => {
   return (
     <>
       <div
-        className="pt-24 sm:pt-36 sm:pb-16 max-w-[910px] mx-auto px-6 sm:px-10 relative"
+        className="pt-24 sm:pt-36 sm:pb-12 max-w-[910px] mx-auto px-6 sm:px-10 relative"
         id="become-a-member"
       >
         <h3 className="font-semibold text-[32px]  sm:text-4xl md:text-5xl lg:text-[56px] leading-[1.125] text-center">
@@ -33,7 +33,7 @@ const About: React.FC<AboutProps> = () => {
       <section id="about" className="pt-28 pb-16 max-w-[1400px] mx-auto sm:px-10">
         <div className="flex justify-between pb-3 border-b border-[#cccccc] px-4 sm:px-0">
           <p className="text-2xl sm:text-4xl lg:text-5xl font-medium">
-            <span className="hidden sm:inline">UF</span> Developer Student Club
+            About Us
           </p>
           <img src="/star.svg" className="" />
         </div>

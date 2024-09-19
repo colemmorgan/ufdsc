@@ -9,7 +9,7 @@ const Hero: React.FC<HeroProps> = () => {
       <Elipse />
       <Elipse2 />
       <Elipse3 />
-      <div className="max-w-[1380px] mx-auto pt-28 sm:pt-40 flex flex-col items-center text-center mb-4 sm:mb-12 relative z-10 px-6 sm:px-10">
+      <div className="max-w-[1380px] mx-auto pt-28 sm:pt-36 flex flex-col items-center text-center mb-4 sm:mb-12 relative z-10 px-6 sm:px-10">
         <div className="gradient-border rounded-full overflow-hidden">
           <p className="bg-white rounded-full py-1 px-4 text-xs sm:text-sm flex items-center gap-1 font-medium">
             <span className="text-base text-blue">
@@ -40,7 +40,7 @@ const Hero: React.FC<HeroProps> = () => {
         </div>
       </div>
       <Grid />
-      <figure className="max-w-[460px] h-[320px] sm:h-[347px] mt-16 mx-auto px-6 relative">
+      <figure className="max-w-[450px] h-[320px] sm:h-[338px] mt-16 mx-auto px-6 relative">
           <img src="/photos/hero-graphic.png" alt="" className="w-full" />
         </figure>
       <div className="max-w-[408px] mx-auto mt-2 sm:mt-16">
