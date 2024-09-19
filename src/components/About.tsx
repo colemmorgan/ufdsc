@@ -6,10 +6,10 @@ const About: React.FC<AboutProps> = () => {
   return (
     <>
       <div
-        className="pt-24 sm:pt-36 sm:pb-12 max-w-[910px] mx-auto px-6 sm:px-10 relative"
+        className="pt-24 sm:pt-36 sm:pb-12 max-w-[910px] mx-auto px-4 sm:px-10 relative"
         id="become-a-member"
       >
-        <h3 className="font-semibold text-[32px]  sm:text-4xl md:text-5xl lg:text-[56px] leading-[1.125] text-center">
+        <h3 className="font-semibold text-[34px]  sm:text-4xl md:text-5xl lg:text-[56px] leading-[1.125] text-center">
           Becoming a <span className="text-green">member</span> is as easy as
           joining our <span className="text-blue">discord!</span>
         </h3>
