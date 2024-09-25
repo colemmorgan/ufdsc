@@ -6,59 +6,67 @@ const About: React.FC<AboutProps> = () => {
   return (
     <>
       <div
-        className="pt-24 sm:pt-36 sm:pb-12 max-w-[910px] mx-auto px-4 sm:px-10 relative"
+        className="pt-20 sm:pt-36 max-w-[910px] mx-auto px-4 sm:px-10 relative pb-6 sm:pb-12"
         id="become-a-member"
       >
         <h3 className="font-semibold text-[34px]  sm:text-4xl md:text-5xl lg:text-[56px] leading-[1.125] text-center">
-          Becoming a <span className="text-green">member</span> is as easy as
+          Becoming a <span className="text-purple">member</span> is as easy as
           joining our <span className="text-blue">discord!</span>
         </h3>
         <div className="mt-8 flex justify-center gap-4 text-sm">
           <a
             href="https://discord.gg/b4GzPB36xy"
             target="_blank"
-            className="bg-button-blue text-white rounded-md w-[180px] text-center pt-2 pb-1.5"
+            className="bg-purple text-black rounded-md w-[180px] text-center py-2"
           >
             Join Discord
           </a>
           <a
             href="https://www.instagram.com/dsc.uf/"
             target="_blank"
-            className="border border-[#cccccc] rounded-md w-[180px] text-center pt-2 pb-1.5"
+            className="border border-[#cccccc] rounded-md w-[180px] text-center py-2"
           >
             Follow on IG
           </a>
         </div>
       </div>
-      <section id="about" className="pt-28 pb-16 max-w-[1400px] mx-auto sm:px-10">
-        <div className="flex justify-between pb-3 border-b border-[#cccccc] px-4 sm:px-0">
-          <p className="text-2xl sm:text-4xl lg:text-5xl font-medium">
-            About Us
+      <div className="max-w-[1280px] mx-auto px-6 sm:px-10 flex flex-col xl:flex-row  items-center pt-20 sm:pt-36 pb-8 sm:pb-20" id="about">
+        <div className="max-w-[800px] w-full ">
+          <h3 className="text-[22px] sm:text-3xl md:text-4xl lg:text-5xl leading-normal lg:leading-normal font-medium text-center xl:text-left">
+            UFDSC is a{" "}
+            <span className="text-gradient font-semibold italic">
+              project-based
+            </span>{" "}
+            club focused on helping students improve their{" "}
+            <span className="text-gradient font-semibold italic">
+              project development
+            </span>{" "}
+            skills.
+          </h3>
+          <p className="mt-6 sm:text-lg md:text-xl leading-relaxed">
+            Our goal is for our members to become familiar with how a full-stack
+            application is made and help them create their own! Whether you're a
+            complete beginner or have some experience, we can match you with
+            teams and provide the support you need to develop your full-stack
+            skills and work on your own projects!
           </p>
-          <img src="/star.svg" className="" />
         </div>
-        <div className="pt-8 sm:pt-16 max-w-[1000px] mx-auto px-6 sm:px-10">
-          <div className="relative">
-            <p className="text-[25px] lg:text-[42px] leading-tight text-center sm:text-left">
-              UFDSC is a <i className="text-gradient px-[1px] font-medium">project-based</i>{" "}
-              club focused on helping students improve their{" "}
-              <i className="text-gradient px-[1px] font-medium">development skills.</i> 
-            </p>
-          </div>
-         <div className="text-lg leading-loose">
-         <p className="mt-8 sm:mt-12">Our goal is for our members to become familiar with how a
-            full-stack application is made and help them create their own!
-            Whether you're a complete beginner or have some experience, we can
-            match you with teams and provide the support you need to develop
-            your full-stack skills and work on your own projects!</p>
-            <p className="mt-4"> We use a wide variety of technologies such as android
-            development, web development, cloud computing and machine learning.
-            Every spring we put these technologies together to compete in the
-            Google DSC Solution Challenge. Find more on the solution challenge
-            below.</p>
-         </div>
+        <div className="w-full max-w-[400px] xl:pl-12 mt-8 sm:mt-12">
+          <p className="text-center text-lg sm:text-xl">Upcoming/Recent Event</p>
+          <figure className="relative w-full aspect-auto mt-4 sm:mt-6">
+            <a
+              href="https://www.instagram.com/p/DATcfzExkdy/"
+              target="_blank"
+              className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-0 opacity-0 transition-all hover:bg-opacity-80 hover:opacity-100  "
+            ><span className="bg-white text-black rounded-full py-1 px-6 font-medium  sm:text-xl">View post on Instagram</span></a>
+            <img
+              src="/photos/event-placeholder.webp"
+              alt=""
+              className="rounded-md"
+            />
+          </figure>
         </div>
-      </section>
+      </div>
     </>
   );
 };

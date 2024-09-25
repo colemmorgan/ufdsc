@@ -33,11 +33,10 @@ const Contact: React.FC<ContactProps> = () => {
   };
 
   return (
-    <div className="max-w-[1260px] mx-auto  pt-24 pb-32 sm:pb-44" id="contact">
+    <div className="max-w-[1280px] mx-auto  pt-24 pb-28 sm:pb-48" id="contact">
       <div className="px-6 sm:px-10">
-        <div className="flex justify-between pb-4 border-b border-[#cccccc]">
-          <p className="text-2xl sm:text-4xl font-medium">Reach Out!</p>
-          <img src="/star.svg" alt="" />
+        <div className="flex justify-between pb-4 border-b border-[#383838]">
+          <p className="text-2xl sm:text-3xl font-medium">Reach Out!</p>
         </div>
       </div>
       <div className="flex flex-col items-center md:items-start md:flex-row w-full md:px-10">
@@ -98,7 +97,7 @@ const Contact: React.FC<ContactProps> = () => {
             ></textarea>
           </div>
           <button
-            className="text-sm bg-button-blue text-white py-1.5 sm:py-2 rounded-md flex justify-center text-center"
+            className="text-sm bg-[#3a3a3a] text-white py-1.5 sm:py-2 rounded-md flex justify-center text-center"
             type="submit"
           >
             {emailState === "loading" && (

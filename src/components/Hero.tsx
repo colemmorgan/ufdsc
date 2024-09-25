@@ -1,291 +1,93 @@
 import React from "react";
-import { IoLocationSharp } from "react-icons/io5";
+
+import FadeIn from "./motion-components/FadeIn";
 
 type HeroProps = {};
 
 const Hero: React.FC<HeroProps> = () => {
   return (
-    <>
-      <Elipse />
-      <Elipse2 />
-      <Elipse3 />
-      <div className="max-w-[1380px] mx-auto pt-28 sm:pt-36 flex flex-col items-center text-center mb-4 sm:mb-12 relative z-10 px-6 sm:px-10">
-        <div className="gradient-border rounded-full overflow-hidden">
-          <p className="bg-white rounded-full py-1 px-4 text-xs sm:text-sm flex items-center gap-1 font-medium">
-            <span className="text-base text-blue">
-              <IoLocationSharp />
-            </span>{" "}
-            University of Florida
-          </p>
+    <div className="sm:min-h-screen flex flex-col justify-between w-full">
+      <span id="placeholder" />
+      <div className="pt-32 pb-12 sm:pb-0 sm:pt-24 lg:pt-36  lg:pb-28 px-6 sm:px-10 flex flex-col lg:flex-row items-center justify-between w-full  max-w-[1280px] mx-auto relative z-10">
+        <div className="w-full max-w-[700px] flex flex-col items-center lg:items-start">
+          <FadeIn delay={0.1}>
+            <p className="font-light text-light-gray text-xs sm:text-normal">
+              Join <span className="text-purple">422</span> other developers on
+              Discord!
+            </p>
+          </FadeIn>
+          <h1 className="flex text-4xl md:text-[44px] xl:text-[52px] 2xl:text-6xl font-semibold flex-wrap mt-2 leading-[1.375] lg:leading-tight 2xl:leading-[1.375]  justify-center lg:justify-start">
+            <FadeIn delay={0.15}>
+              <span className="hidden sm:block">UF&nbsp;</span>
+            </FadeIn>
+            <FadeIn delay={0.22}>
+              <span>Google&nbsp;</span>
+            </FadeIn>
+            <FadeIn delay={0.29}>
+              <span>Developer&nbsp;</span>
+            </FadeIn>
+            <FadeIn delay={0.36}>
+              <span>Student&nbsp;</span>
+            </FadeIn>
+            <br />
+            <FadeIn delay={0.43}>
+              <span>Club</span>
+            </FadeIn>
+          </h1>
+
+          <FadeIn delay={0.5}>
+            <h2 className="mt-3 sm:mt-4 max-w-[560px]  sm:text-lg xl:text-xl leading-normal text-center lg:text-start">
+              Learn <span className="text-purple">Google Developer</span>{" "}
+              technologies as well as mobile and web development skills
+              essential for the <span className="text-blue">industry.</span>
+            </h2>
+          </FadeIn>
+          <div className="mt-6 flex flex-col sm:flex-row gap-4 text-sm items-center sm:items-start w-full sm:w-auto">
+            <div className="w-full sm:w-auto">
+              <FadeIn delay={0.57}>
+                <a
+                  href="https://discord.gg/b4GzPB36xy"
+                  target="_blank"
+                  className="text-black bg-purple px-12 py-1.5 sm:py-2 rounded-md font-semibold w-full block text-center"
+                >
+                  Join Discord
+                </a>
+              </FadeIn>
+            </div>
+            <div className="w-full sm:w-auto">
+              <FadeIn delay={0.64}>
+                <a
+                  href="#about"
+                  className="border border-gray px-12 py-1.5 sm:py-2 rounded-md block text-center"
+                >
+                  Learn More
+                </a>
+              </FadeIn>
+            </div>
+          </div>
         </div>
-        <h1 className="text-[48px] leading-[1.125] sm:text-6xl font-semibold mt-4 sm:mt-6"> <span className="sm:hidden">UF</span> Developer Student Club</h1>
-        <h2 className="max-w-[700px] font-medium mt-3 sm:mt-4  sm:text-xl">
-          Learn <span className="text-button-blue">Google Developer</span>{" "}
-          technologies as well as mobile and web development skills essential
-          for the <span className="text-green">industry.</span>
-        </h2>
-        <div className="flex flex-col sm:flex-row mt-4 gap-4 text-sm w-full justify-center">
-          <a
-            className="bg-button-blue text-white rounded-md w-full block sm:w-44 py-1.5"
-            href="#become-a-member"
-          >
-            Become a Member
-          </a>
-          <a
-            className="border border-[#cccccc] text-button-blue bg-white rounded-md w-full sm:w-44 py-1.5"
-            href="#about"
-          >
-            Learn More
-          </a>
+        <div className="flex  justify-center lg:justify-end lg:pl-10 max-w-[500px] w-full mt-16 lg:mt-0">
+          <FadeIn delay={0.71}>
+            <figure className="">
+              <img
+                src="/photos/hero-graphic.png"
+                alt=""
+                className="w-[380px] xl:w-[420px] 2xl:w-[460px] aspect-[1.19]"
+              />
+            </figure>
+          </FadeIn>
         </div>
       </div>
-      <Grid />
-      <figure className="max-w-[450px] h-[320px] sm:h-[338px] mt-16 mx-auto px-6 relative">
-          <img src="/photos/hero-graphic.png" alt="" className="w-full" />
-        </figure>
-      <div className="max-w-[408px] mx-auto mt-2 sm:mt-16">
-        <div className="flex items-center justify-center gap-4 mb-4">
+      <div className="max-w-[408px] mx-auto mt-2 sm:mt-16 pb-8">
+        <div className="flex items-center justify-center gap-4 mb-4 h-[30px]">
           <img src="/google.webp" alt="" className="w-[30px] grayscale" />
-          <img src="/uf.png" alt="" className="w-[40px] grayscale" />
+          <img src="/uf.svg" alt="" className="w-[40px] " />
         </div>
-        <p className="text-gray text-xs sm:text-sm text-center">
+        <p className="text-light-gray text-xs sm:text-sm text-center">
           A Google Developers program for university students
         </p>
       </div>
-     
-    </>
+    </div>
   );
 };
 export default Hero;
-
-const Elipse: React.FC = () => {
-  return (
-    <svg
-      width="1800"
-      height="275"
-      viewBox="0 0 1800 275"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="absolute  left-1/2 -translate-x-1/2 top-0 hidden sm:block w-full  overflow-hidden"
-    >
-      <g filter="url(#filter0_f_45_112)">
-        <path
-          d="M1800 36C1800 68.5848 1395.04 95 895.5 95C395.958 95 -9 68.5848 -9 36C-9 3.4152 395.958 -23 895.5 -23C1395.04 -23 1800 3.4152 1800 36Z"
-          fill="url(#paint0_linear_45_112)"
-        />
-      </g>
-      <defs>
-        <filter
-          id="filter0_f_45_112"
-          x="-189"
-          y="-203"
-          width="2169"
-          height="478"
-          filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
-        >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="BackgroundImageFix"
-            result="shape"
-          />
-          <feGaussianBlur
-            stdDeviation="90"
-            result="effect1_foregroundBlur_45_112"
-          />
-        </filter>
-        <linearGradient
-          id="paint0_linear_45_112"
-          x1="-9"
-          y1="36"
-          x2="1800"
-          y2="36"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="#6A9FF9" stop-opacity="0.75" />
-          <stop offset="1" stop-color="#57C66A" stop-opacity="0.75" />
-        </linearGradient>
-      </defs>
-    </svg>
-  );
-};
-
-const Elipse2: React.FC = () => {
-  return (
-    <svg
-      width="364"
-      height="652"
-      viewBox="0 0 364 652"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="absolute hidden sm:block right-0 top-1/2 -translate-y-1/4"
-    >
-      <g filter="url(#filter0_f_45_125)" className="rounded-full">
-        <ellipse
-          cx="326"
-          cy="326"
-          rx="270"
-          ry="169"
-          transform="rotate(-45 326 326)"
-          fill="#6A9FF9"
-          fill-opacity="0.3"
-        />
-      </g>
-      <defs>
-        <filter
-          id="filter0_f_45_125"
-          x="0.73584"
-          y="0.735687"
-          width="650.528"
-          height="650.529"
-          filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
-        >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="BackgroundImageFix"
-            result="shape"
-          />
-          <feGaussianBlur
-            stdDeviation="50"
-            result="effect1_foregroundBlur_45_125"
-          />
-        </filter>
-      </defs>
-    </svg>
-  );
-};
-
-const Elipse3: React.FC = () => {
-  return (
-    <svg
-      width="433"
-      height="528"
-      viewBox="0 0 433 528"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="absolute left-0 top-[20%] hidden sm:block"
-    >
-      <g filter="url(#filter0_f_45_123)">
-        <ellipse
-          cx="90.5"
-          cy="264"
-          rx="242.5"
-          ry="164"
-          fill="#57C66A"
-          fill-opacity="0.2"
-        />
-      </g>
-      <defs>
-        <filter
-          id="filter0_f_45_123"
-          x="-252"
-          y="0"
-          width="685"
-          height="528"
-          filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
-        >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="BackgroundImageFix"
-            result="shape"
-          />
-          <feGaussianBlur
-            stdDeviation="50"
-            result="effect1_foregroundBlur_45_123"
-          />
-        </filter>
-      </defs>
-    </svg>
-  );
-};
-
-const Grid: React.FC = () => {
-  return (
-    <svg
-      width="1314"
-      height="1314"
-      viewBox="0 0 1314 1314"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="absolute left-1/2 top-[63%] -translate-x-1/2 -translate-y-1/2 hidden sm:block max-w-[1003px] overflow-hidden"
-    >
-      <mask
-        id="mask0_56_161"
-        style={{ maskType: "alpha" }}
-        maskUnits="userSpaceOnUse"
-        x="0"
-        y="0"
-        width="1314"
-        height="1314"
-      >
-        <rect width="1314" height="1314" fill="url(#paint0_radial_56_161)" />
-        {[
-          221.17, 300.341, 379.511, 458.682, 537.852, 617.023, 696.193, 775.364,
-          854.534, 933.705, 1012.88, 1092.05,
-        ].map((x, index) => (
-          <rect
-            key={`vertical-${index}`}
-            x={x}
-            y="168.651"
-            width="0.783866"
-            height="976.697"
-            fill="#D9D9D9"
-          />
-        ))}
-        {[
-          142, 221.171, 300.341, 379.511, 458.682, 537.852, 617.023, 696.193,
-          775.364, 854.534, 933.705, 1012.88, 1092.05, 1171.22,
-        ].map((y, index) => (
-          <rect
-            key={`horizontal-${index}`}
-            x="1145.35"
-            y={y}
-            width="0.783866"
-            height="976.697"
-            transform={`rotate(90 1145.35 ${y})`}
-            fill="#D9D9D9"
-          />
-        ))}
-      </mask>
-      <g mask="url(#mask0_56_161)">
-        <path
-          opacity="0.5"
-          d="M1255.65 616.5C1255.65 947.871 987.026 1216.5 655.655 1216.5C324.284 1216.5 55.6548 947.871 55.6548 616.5C55.6548 285.129 324.284 16.5 655.655 16.5C987.026 16.5 1255.65 285.129 1255.65 616.5Z"
-          fill="url(#paint1_radial_56_161)"
-        />
-      </g>
-      <defs>
-        <radialGradient
-          id="paint0_radial_56_161"
-          cx="0"
-          cy="0"
-          r="1"
-          gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(657 657) rotate(90) scale(490.012)"
-        >
-          <stop stopColor="#202124" stopOpacity="0.37" />
-          <stop offset="1" stopColor="#202124" stopOpacity="0" />
-        </radialGradient>
-        <radialGradient
-          id="paint1_radial_56_161"
-          cx="0"
-          cy="0"
-          r="1"
-          gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(657 657) rotate(90) scale(447.5)"
-        >
-          <stop stopColor="#9AA0A6" />
-          <stop offset="1" stopColor="#9AA0A6" stopOpacity="0" />
-        </radialGradient>
-      </defs>
-    </svg>
-  );
-};

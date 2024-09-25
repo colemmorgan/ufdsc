@@ -56,14 +56,14 @@ const officers: Officer[] = [
 
 const Officers: React.FC<OfficersProps> = () => {
   return (
-    <div className="pt-24 sm:pt-28 max-w-[1380px]  mx-auto pb-4 sm:pb-10" id="officers">
-       <div className="flex justify-between pb-3 border-b border-[#cccccc] px-10 sm:px-4">
-          <p className="text-2xl sm:text-4xl font-medium">
-            Meet the Team
-          </p>
-          <img src="/star.svg" className="" />
-        </div>
-      <div className="flex flex-wrap gap-6 justify-center mt-12 sm:mt-16 px-6 sm:px-10">
+    <div
+      className="pt-24 sm:pt-28 max-w-[1280px] px-6 sm:px-10  mx-auto pb-4 sm:pb-10"
+      id="officers"
+    >
+      <div className="flex justify-between pb-3 border-b border-[#383838]">
+        <p className="text-2xl sm:text-4xl font-medium">Meet the Team</p>
+      </div>
+      <div className="flex flex-wrap gap-6 justify-center mt-12 sm:mt-16">
         {officers.map((officer, i) => (
           <OfficerDesc officer={officer} key={i} />
         ))}
@@ -79,8 +79,8 @@ type OfficerProps = {
 
 const OfficerDesc: React.FC<OfficerProps> = ({ officer }) => {
   return (
-    <div className="p-8 bg-white bg-opacity-35 relative backdrop-blur-xl bs border border-light-gray flex flex-col items-center rounded-md sm:max-w-[272px] w-full">
-      <figure className="h-24 w-24 rounded-full border-[4px] border-blue bg-light-gray">
+    <div className="p-8 bg-[#1e1e1e] border border-[#383838] flex flex-col items-center rounded-md sm:max-w-[262px] w-full bs">
+      <figure className="h-24 w-24 rounded-full border-[2px] border-purple bg-light-gray">
         <img
           src={officer.img}
           alt=""
@@ -95,7 +95,7 @@ const OfficerDesc: React.FC<OfficerProps> = ({ officer }) => {
         <a
           href={officer.linkedin}
           target="_blank"
-          className="text-blue mt-3 text-2xl cursor-pointer"
+          className="text-purple mt-3 text-2xl cursor-pointer"
         >
           <FaLinkedin />
         </a>

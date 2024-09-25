@@ -34,13 +34,12 @@ const faqs = [
 const Faq: React.FC = () => {
   return (
     <section className="pt-28 sm:pb-10" id="faq">
-      <div className="flex justify-between pb-3 px-4 sm:px-10 max-w-[1260px] mx-auto mb-4">
-        <p className="text-xl sm:text-2xl lg:text-4xl font-medium">
+      <div className="flex justify-between pb-3 px-4 sm:px-10 max-w-[1280px] mx-auto mb-4">
+        <p className="text-xl sm:text-2xl lg:text-3xl font-medium">
           Frequently Asked Questions
         </p>
-        <img src="/star.svg" className="" />
       </div>
-      <div className="border-b border-[#dddddd]">
+      <div className="border-b border-[#404040]">
         {faqs.map((faq) => (
           <FaqTab
             key={faq.question}
@@ -64,14 +63,14 @@ const FaqTab: React.FC<FaqTabProps> = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
     <div
-      className={`border-t border-[#dddddd] py-5 sm:py-6 ${
-        isOpen ? "" : "hover:bg-light-gray"
+      className={`border-t border-[#404040] py-5 sm:py-6 ${
+        isOpen ? "" : "hover:bg-[#242424]"
       } cursor-pointer transition-all`}
       onClick={() => setIsOpen(!isOpen)}
     >
       <div className="max-w-[1260px] mx-auto px-6 sm:px-10">
         <div className={`flex justify-between items-center `}>
-          <p className="pr-8 text-lg sm:text-2xl text-button-blue">{question}</p>
+          <p className="pr-8 text-lg sm:text-xl">{question}</p>
           <span
             className={`text-xl sm:text-2xl text-button-blue ${
               isOpen && "rotate-180"
@@ -87,7 +86,7 @@ const FaqTab: React.FC<FaqTabProps> = ({ question, answer }) => {
               animate={{ height: "auto", opacity: 1}}
               exit={{ height: 0, opacity:0}}
               transition={{ duration: 0.2,  }}
-              className={`md:text-lg lg:text-xl font-light leading-relaxed mt-4`}
+              className={`md:text-lg  font-light leading-relaxed mt-4`}
             >
               {answer}
             </motion.p>
