@@ -1,1 +1,1 @@
-Hi, welcome to the UF Google Developer Club's Website. We are currently migrating to Version 3. Some code may be unfinished or require refactoring. Thank you for patience. In the meantime you can visit our site https://www.ufdsc.org/
+Hi, welcome to the UF Google Developer Club's Website. We are currently migrating to Version 3. Some code may be unfinished or require refactoring. Thank you for your patience. In the meantime you can visit our site https://www.ufdsc.org/
