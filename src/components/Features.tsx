@@ -6,11 +6,11 @@ type FeaturesProps = {};
 
 const Features: React.FC<FeaturesProps> = () => {
   return (
-    <div className="pt-28 pb-8 sm:pb-10 px-6 sm:px-10 max-w-[1280px] mx-auto">
+    <div className="pt-24 pb-8 sm:pb-10 px-6 sm:px-10 max-w-[1280px] mx-auto">
        <div className="flex justify-between pb-3 border-b border-[#383838]">
           <p className="text-2xl sm:text-4xl font-medium">Why Should I Join?</p>
         </div>
-      <div className="flex flex-wrap gap-8 xl:gap-6 flex-col lg:flex-row justify-center pt-8">
+      <div className="flex flex-wrap gap-8 xl:gap-6 flex-col lg:flex-row justify-center pt-12">
       <div className="bg-[#1e1e1e] border border-[#383838] py-10 px-4 sm:px-6  lg:w-[370px] flex flex-col items-center rounded-lg bs">
         <div className="h-20 w-20 bs border border-[#383838] rounded-md flex items-center justify-center">
           <span className="text-purple text-4xl">
