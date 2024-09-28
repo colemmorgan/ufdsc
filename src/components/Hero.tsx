@@ -8,7 +8,7 @@ const Hero: React.FC<HeroProps> = () => {
   return (
     <div className="sm:min-h-screen flex flex-col justify-between w-full">
       <span id="placeholder" />
-      <div className="pt-32 pb-12 sm:pb-0 sm:pt-24 lg:pt-36  lg:pb-28 px-6 sm:px-10 flex flex-col lg:flex-row items-center justify-between w-full  max-w-[1280px] mx-auto relative z-10">
+      <div className="pt-32 pb-12 sm:pb-0 sm:pt-24 lg:pt-40  lg:pb-28 px-6 sm:px-10 flex flex-col lg:flex-row items-center justify-between w-full  max-w-[1280px] mx-auto relative z-10">
         <div className="w-full max-w-[700px] flex flex-col items-center lg:items-start">
           <FadeIn delay={0.1}>
             <p className="font-light text-light-gray text-xs sm:text-normal">
