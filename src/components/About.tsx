@@ -40,7 +40,7 @@ const About: React.FC<AboutProps> = () => {
         </div>
         <div className="flex flex-col xl:flex-row  items-center pt-8">
           <div className="max-w-[800px] w-full ">
-            <h3 className="text-[22px] sm:text-3xl md:text-4xl lg:text-5xl leading-normal lg:leading-normal font-medium text-center xl:text-left">
+            <h3 className="text-[22px] sm:text-3xl md:text-4xl lg:text-5xl leading-normal lg:leading-tight font-medium text-center xl:text-left">
               UFDSC is a{" "}
               <span className="text-gradient font-semibold italic">
                 project-based
