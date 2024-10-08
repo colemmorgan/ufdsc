@@ -28,32 +28,29 @@ const Contact: React.FC<ContactProps> = () => {
         },
         () => {
           setEmailState("error");
-        }
+        },
       );
   };
 
   return (
-    <div className="max-w-[1280px] mx-auto  pt-24 pb-28 sm:pb-48" id="contact">
-      <div className="px-6 sm:px-10">
-        <div className="flex justify-between pb-4 border-b border-[#383838]">
-          <p className="text-2xl sm:text-3xl font-medium">Reach Out!</p>
-        </div>
-      </div>
-      <div className="flex flex-col items-center md:items-start md:flex-row w-full md:px-10">
-        <div className="md:pr-12 md:w-1/2 px-6 md:px-0">
-          <p className="leading-relaxed mt-8 text-sm sm:text-xl font-light">
+    <div className="mx-auto max-w-[1300px] px-6 pt-12 sm:pt-20 sm:px-10" id="contact">
+      <h4 className="text-2xl font-medium">Contact</h4>
+      <div className="grid gap-x-10 gap-y-10 pt-6 lg:grid-cols-2">
+        <div className="pr-5">
+          <p className="text-sm font-light leading-relaxed sm:text-xl">
             We're here to help! If you have any questions, suggestions, or
             comments about the UFDSC, please feel free to reach out to us using
             the contact form below. Otherwise, you can reach out to an officer
             on discord.
           </p>
-          <p className="leading-relaxed mt-4 text-sm sm:text-lg font-light">
-            We will respond to all questions sent through this form in at most 24-48 hours.
+          <p className="mt-4 text-sm font-light leading-relaxed sm:text-lg">
+            We will respond to all questions sent through this form in at most
+            24-48 hours.
           </p>
         </div>
         <form
           action=""
-          className="mt-8 flex flex-col gap-5 px-6 md:px-0 w-full md:w-1/2"
+          className="flex flex-col gap-5"
           ref={form}
           onSubmit={sendEmail}
         >
@@ -66,7 +63,7 @@ const Contact: React.FC<ContactProps> = () => {
               type="email"
               name="user_email"
               required
-              className="w-full border-b border-gray mt-1 py-1 sm:py-2 outline-none sm:text-lg"
+              className="mt-1 w-full border-b border-gray-300 py-1 outline-none sm:py-2 sm:text-lg"
               placeholder="email@email.com"
             />
           </div>
@@ -79,7 +76,7 @@ const Contact: React.FC<ContactProps> = () => {
               id="username"
               name="user_name"
               required
-              className="w-full border-b border-gray mt-1 py-1 sm:py-2 outline-none sm:text-lg"
+              className="mt-1 w-full border-b border-gray-300 py-1 outline-none sm:py-2 sm:text-lg"
               placeholder="John Doe"
             />
           </div>
@@ -91,13 +88,13 @@ const Contact: React.FC<ContactProps> = () => {
               name="message"
               required
               id="message"
-              className="w-full border-b border-gray mt-1 py-1 sm:py-2 outline-none resize-none sm:text-lg"
+              className="mt-1 w-full resize-none border-b border-gray-300 py-1 outline-none sm:py-2 sm:text-lg"
               rows={1}
               placeholder="Your message here"
             ></textarea>
           </div>
           <button
-            className="text-sm bg-[#3a3a3a] text-white py-1.5 sm:py-2 rounded-md flex justify-center text-center"
+            className="flex justify-center rounded-md bg-blue py-1.5 text-center text-sm text-white sm:py-2"
             type="submit"
           >
             {emailState === "loading" && (
@@ -108,7 +105,7 @@ const Contact: React.FC<ContactProps> = () => {
             {emailState === "inactive" && "Submit"}
             {emailState === "error" && "Error. Please contact us on Discord"}
             {emailState === "sent" &&
-              "Success!. Feel free to send another message"}
+              "Success! Feel free to send another message"}
           </button>
         </form>
       </div>
