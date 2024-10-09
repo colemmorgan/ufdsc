@@ -26,8 +26,7 @@ const About: React.FC = () => {
   }
   return (
     <div className="mx-auto max-w-[1300px] px-6 sm:px-10 pt-16 sm:pt-24" id="about">
-      <h3 className="text-2xl sm:text-3xl font-semibold">What We Do</h3>
-      <div className="mt-4 sm:mt-6">
+      <div className="">
         <p className="text-2xl md:text-4xl lg:text-[40px] lg:leading-[1.3725]">
           Developer Student Club is a
           <span className="font-medium text-blue"> project-based</span> club
