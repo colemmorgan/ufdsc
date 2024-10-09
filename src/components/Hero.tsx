@@ -4,7 +4,7 @@ type HeroProps = {};
 
 const Hero: React.FC<HeroProps> = () => {
   return (
-    <div className="mx-auto mt-32 sm:mt-40 md:mt-52 flex max-w-[1300px] justify-between px-6 sm:px-10">
+    <div className="mx-auto mt-28 sm:mt-40 md:mt-52 flex max-w-[1300px] justify-between px-6 sm:px-10">
       <div className="">
         <p className="text-sm sm:text-base">
           University of Florida <span className="text-lg">&nbsp;🐊</span>
