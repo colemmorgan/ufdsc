@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['inter', 'ui-sans-serif', 'system-ui'], 
+        sans: ['Geist', 'ui-sans-serif', 'system-ui'], 
       },
       colors: {
         'black': "#202124",

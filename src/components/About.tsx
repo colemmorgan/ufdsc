@@ -29,9 +29,9 @@ const About: React.FC = () => {
       <div className="">
         <p className="text-2xl md:text-4xl lg:text-[40px] lg:leading-[1.3725]">
           Developer Student Club is a
-          <span className="font-medium text-blue"> project-based</span> club
+          <span className=" text-blue"> project-based</span> club
           focused on helping students improve their{" "}
-          <span className="font-medium text-blue">project development </span>
+          <span className=" text-blue">project development </span>
           skills.
         </p>
         <p className="pt-3  sm:text-xl font-light leading-relaxed">
@@ -73,7 +73,7 @@ type FeatureProps = {
 const Feature: React.FC<FeatureProps> = ({ img, title, desc }) => {
   return (
     <div className="">
-      <div className="flex sm:h-[400px] w-full items-center justify-center rounded-md bg-blue bg-opacity-70 p-6 sm:p-8">
+      <div className="flex sm:h-[400px] w-full items-center justify-center rounded-md bg-gray-100  p-4 sm:p-8">
         <img src={img} alt="" className="max-h-full rounded-md" />
       </div>
       <p className="mt-6 text-lg sm:text-xl font-medium">{title}</p>

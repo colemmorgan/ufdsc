@@ -7,7 +7,7 @@ type NavProps = {};
 const Nav: React.FC<NavProps> = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <nav className="fixed left-0 right-0 top-4 md:top-6 z-10 flex px-4">
+    <nav className="fixed left-0 right-0 top-4 md:top-6 z-20 flex px-4">
       <div className="nav-shadow mx-auto w-full max-w-[800px] rounded-md md:rounded-full bg-white px-4">
         <div className="grid w-full grid-cols-12 py-1.5">
           <figure className="col-span-3 flex items-center">
