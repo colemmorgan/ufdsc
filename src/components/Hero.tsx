@@ -1,43 +1,42 @@
-import React from "react";
-import FadeIn from "./motion-components/FadeIn";
-
-type HeroProps = {};
-
-const Hero: React.FC<HeroProps> = () => {
+export default function Hero() {
   return (
-    <div className="px-6 sm:px-10 bg-gray-50">
-      <div className="mx-auto flex flex-col lg:flex-row max-w-[1220px] justify-between pb-16 lg:pb-60  pt-28 sm:pt-40 lg:pt-[272px] items-center relative">
-        <div className="relative z-10 flex flex-col sm:items-center sm:text-center lg:text-left lg:items-start pb-12 lg:pb-0">
-          <h1 className="text-[40px] leading-tight sm:text-5xl xl:text-[54px] font-semibold pb-2">Developer Student Club</h1>
-          <p className="max-w-[560px] xl:max-w-[600px]  sm:text-xl font-medium">
-            Learn <span className="text-blue">Google Developer</span>{" "}
-            technologies as well as mobile and web development skills essential
-            for the <span className="text-blue">industry.</span>
-          </p>
-          <div className="mt-4 flex gap-4">
-            <a
-              href=""
-              className="rounded-md bg-blue px-8 py-2 text-xs text-white sm:px-10 sm:text-sm"
-            >
-              Join Discord
-            </a>
-            <a
-              href=""
-              className="rounded-md border border-blue px-8 py-2 text-xs sm:px-10 sm:text-sm"
-            >
-              Learn More
-            </a>
-          </div>
-          <p className="mt-4 text-xs sm:text-sm opacity-60">A Google Developers program for university students.</p>
-        </div>
-        <figure className="lg:absolute -right-12 xl:right-0 lg:mt-0 sm:scale-[.80] xl:scale-100">
-          <FadeIn delay={0.15}>
-          <img src="wire.png" alt="" loading="lazy" />
-          </FadeIn>
-        </figure>
-    
+    <div className="col-span-2 flex flex-col rounded-3xl bg-white px-6 py-6 sm:min-h-[540px] sm:px-8 lg:col-span-3">
+      <div className="flex justify-between">
+        <p className="text-sm font-medium">Developer Student Club</p>
+        <img src="/favicon.svg" alt="" className="w-10" />
+      </div>
+      <div className="pt-10 sm:pt-16">
+        <span className="text-xs sm:text-sm">Join 500+ members!</span>
+        <h1 className="pt-1 text-3xl sam:text-[40px] font-bold leading-tight">
+          Build, Learn, <br />
+          Innovate with DSC
+        </h1>
+        <h2 className="pt-1.5 sm:text-lg font-medium">
+          Learn <span className="text-blue">Google Developer</span> technologies
+          as well as mobile <br className="hidden sm:inline"/> and web development skills essential for
+          the&nbsp;
+          <span className="text-red">industry.</span>
+        </h2>
+        <a
+          href="https://discord.gg/waWVF8rHP8"
+          target="_blank"
+          className="mt-2 inline-block rounded-md bg-blue px-8 py-2 text-sm text-white"
+        >
+          Join Discord
+        </a>
+      </div>
+
+      <div className="flex-grow"></div>
+      <div className="flex items-end justify-between">
+        <p className="mt-12 pr-5 text-xs text-[#9AA0A6] sm:mt-0">
+          A Google Developers program for university students.
+        </p>
+        <img
+          src="/hero-img.png"
+          alt=""
+          className="hidden w-40 sm:block md:w-52"
+        />
       </div>
     </div>
   );
-};
-export default Hero;
+}

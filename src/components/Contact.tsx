@@ -33,17 +33,17 @@ const Contact: React.FC<ContactProps> = () => {
   };
 
   return (
-    <div className="mx-auto max-w-[1300px] px-6 pt-12 sm:pt-20 sm:px-10" id="contact">
+    <div className="mx-auto col-span-2 lg:col-span-4 p-6 bg-white rounded-3xl" id="contact">
       <h4 className="text-2xl font-medium">Contact</h4>
-      <div className="grid gap-x-10 gap-y-10 pt-6 lg:grid-cols-2">
-        <div className="pr-5">
-          <p className="text-sm font-light leading-relaxed sm:text-xl">
+      <div className="grid gap-6 lg:gap-10 pt-3 sm:pt-6 lg:grid-cols-2">
+        <div className="lg:pr-5">
+          <p className="text-sm font-light leading-relaxed sm:text-lg">
             We're here to help! If you have any questions, suggestions, or
             comments about the UFDSC, please feel free to reach out to us using
             the contact form below. Otherwise, you can reach out to an officer
             on discord.
           </p>
-          <p className="mt-4 text-sm font-light leading-relaxed sm:text-lg">
+          <p className="mt-4 text-sm font-light leading-relaxed sm:text-base">
             We will respond to all questions sent through this form in at most
             24-48 hours.
           </p>
@@ -55,7 +55,7 @@ const Contact: React.FC<ContactProps> = () => {
           onSubmit={sendEmail}
         >
           <div className="">
-            <label htmlFor="email" className="text-sm sm:text-lg">
+            <label htmlFor="email" className="text-sm sm:text-base">
               Email Address
             </label>
             <input
@@ -63,12 +63,12 @@ const Contact: React.FC<ContactProps> = () => {
               type="email"
               name="user_email"
               required
-              className="mt-1 w-full border-b border-gray-300 py-1 outline-none sm:py-2 sm:text-lg"
+              className="mt-1 w-full border-b border-gray-300 py-1 outline-none sm:py-2 sm:text-base"
               placeholder="email@email.com"
             />
           </div>
           <div className="">
-            <label htmlFor="username" className="text-sm sm:text-lg">
+            <label htmlFor="username" className="text-sm sm:text-base">
               Name
             </label>
             <input
@@ -76,19 +76,19 @@ const Contact: React.FC<ContactProps> = () => {
               id="username"
               name="user_name"
               required
-              className="mt-1 w-full border-b border-gray-300 py-1 outline-none sm:py-2 sm:text-lg"
+              className="mt-1 w-full border-b border-gray-300 py-1 outline-none sm:py-2 sm:text-base"
               placeholder="John Doe"
             />
           </div>
           <div className="">
-            <label htmlFor="message" className="text-sm sm:text-lg">
+            <label htmlFor="message" className="text-sm sm:text-base">
               Message
             </label>
             <textarea
               name="message"
               required
               id="message"
-              className="mt-1 w-full resize-none border-b border-gray-300 py-1 outline-none sm:py-2 sm:text-lg"
+              className="mt-1 w-full resize-none border-b border-gray-300 py-1 outline-none sm:py-2 sm:text-base"
               rows={1}
               placeholder="Your message here"
             ></textarea>
@@ -112,4 +112,5 @@ const Contact: React.FC<ContactProps> = () => {
     </div>
   );
 };
-export default Contact;
+
+export default Contact

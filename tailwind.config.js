@@ -6,14 +6,14 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['Geist', 'ui-sans-serif', 'system-ui'], 
-      },
       colors: {
         'black': "#202124",
         'white': "#ffffff",
-        'blue': "#4285F4",
-        'red': "#EA4335"
+        'off-white': "#F3F6FB",
+        'blue': "#4385F5",
+        'green': '#36A855',
+        'red' : '#E94337',
+        'yellow': "#F8BC00"
       },
     },
   },
