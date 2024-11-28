@@ -7,7 +7,7 @@ export default function Hero() {
       </div>
       <div className="pt-10 sm:pt-16">
         <span className="text-xs sm:text-sm">Join 500+ members!</span>
-        <h1 className="pt-1 text-3xl sam:text-[40px] font-bold leading-tight">
+        <h1 className="pt-1 text-3xl sm:text-[40px] font-bold leading-tight">
           Build, Learn, <br />
           Innovate with DSC
         </h1>
