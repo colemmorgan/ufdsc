@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className="col-span-2 flex flex-col rounded-3xl bg-white px-6 py-6 sm:min-h-[540px] sm:px-8 lg:col-span-3">
+    <div className="col-span-2 flex flex-col rounded-2xl sm:rounded-3xl bg-white px-6 py-6 sm:min-h-[540px] sm:px-8 lg:col-span-3">
       <div className="flex justify-between">
         <p className="text-sm font-medium">Developer Student Club</p>
         <img src="/favicon.svg" alt="" className="w-10" />

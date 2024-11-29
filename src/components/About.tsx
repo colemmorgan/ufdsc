@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <>
-      <div className="col-span-2 flex min-h-60 sm:min-h-80 items-center justify-center rounded-3xl bg-blue p-4 sm:p-6">
+      <div className="col-span-2 flex min-h-60 sm:min-h-80 items-center justify-center rounded-2xl sm:rounded-3xl bg-blue p-4 sm:p-6">
         <p className="text-center text-xl sm:text-3xl font-medium sm:leading-[1.3725] text-white">
           Becoming a member is as easy as joining our{" "}
           <a
@@ -14,7 +14,7 @@ export default function About() {
           Instantly gain access to Google perks and more.
         </p>
       </div>
-      <div className="col-span-2 lg:min-h-80 rounded-3xl bg-white px-4 sm:px-6 py-6">
+      <div className="col-span-2 lg:min-h-80 rounded-2xl sm:rounded-3xl bg-white p-6">
         <h3 className="text-xl sm:text-2xl font-medium">About Developer Student Club</h3>
         <p className="mt-3 sm:text-lg leading-relaxed">
           Developer Student Club is a{" "}

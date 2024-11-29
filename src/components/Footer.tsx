@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className=" col-span-2 lg:col-span-4 flex flex-col justify-between rounded-3xl bg-black p-6 text-white md:flex-row">
+    <div className=" col-span-2 lg:col-span-4 flex flex-col justify-between rounded-2xl sm:rounded-3xl bg-black p-6 text-white md:flex-row">
       <div className="flex flex-col justify-between">
         <p className="text-lg font-medium">Thank you for coming!</p>
         <div>

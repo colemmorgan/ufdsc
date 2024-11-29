@@ -7,7 +7,7 @@ export default function LandingGrid() {
         <a
           href="https://discord.gg/waWVF8rHP8"
           target="_blank"
-          className="flex flex-col items-center justify-center rounded-3xl bg-blue text-white min-h-40"
+          className="flex flex-col items-center justify-center rounded-2xl sm:rounded-3xl bg-blue text-white min-h-40"
         >
           <span className="text-6xl">
             <FaDiscord />
@@ -19,7 +19,7 @@ export default function LandingGrid() {
         <a
           href="https://www.instagram.com/dsc.uf/"
           target="_blank"
-          className="flex flex-col items-center justify-center rounded-3xl bg-yellow text-white min-h-40"
+          className="flex flex-col items-center justify-center rounded-2xl sm:rounded-3xl bg-yellow text-white min-h-40"
         >
           <span className="text-6xl">
             <FaInstagram />
@@ -27,11 +27,11 @@ export default function LandingGrid() {
           <p className="text-sm sm:text-base pt-1">Follow us on Instagram!</p>
         </a>
       </div>
-      <div className="flex col-span-1 flex-col items-center justify-center rounded-3xl bg-red text-white min-h-40 lg:col-span-1">
+      <div className="flex col-span-1 flex-col items-center justify-center rounded-2xl sm:rounded-3xl bg-red text-white min-h-40 lg:col-span-1">
         <p className="text-[40px] font-bold">2020</p>
         <p className="text-sm sm:text-base">Founding Date</p>
       </div>
-      <div className="flex col-span-1 flex-col items-center justify-center rounded-3xl bg-green text-white min-h-40 lg:col-span-1">
+      <div className="flex col-span-1 flex-col items-center justify-center rounded-2xl sm:rounded-3xl bg-green text-white min-h-40 lg:col-span-1">
         <p className="text-[40px] font-bold">500+</p>
         <p className="text-sm sm:text-base">Club Members</p>
       </div>

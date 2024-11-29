@@ -1,7 +1,7 @@
 export default function SolutionChallenge() {
   return (
     <>
-      <div className="col-span-2 lg:min-h-80 rounded-3xl bg-white px-4 sm:px-6 py-6">
+      <div className="col-span-2 lg:min-h-80 rounded-2xl sm:rounded-3xl bg-white p-6">
         <p className="text-lg font-medium sm:text-2xl">
           Google DSC Solution Challenge
         </p>
@@ -24,11 +24,11 @@ export default function SolutionChallenge() {
           </a>
         </div>
       </div>
-      <div className="col-span-2 flex sm:h-80 items-center justify-center rounded-3xl bg-green p-6">
+      <div className="col-span-2 flex sm:h-80 items-center justify-center rounded-2xl sm:rounded-3xl bg-green p-3 sm:p-6">
         <img
           src="/photos/solution-challenge.png"
           alt=""
-          className="h-full rounded-md"
+          className="h-full rounded-xl"
         />
       </div>
     </>

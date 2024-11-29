@@ -51,7 +51,7 @@ const officers: Officer[] = [
 
 export default function Team() {
   return (
-    <div className="rounded-3xl bg-black px-2 py-6 xl:p-4">
+    <div className="rounded-2xl sm:rounded-3xl bg-black px-2 py-6 xl:p-4 h-full">
       <p className="text-center font-medium text-white">Meet the team:</p>
       <div className="mt-3 grid grid-cols-1 gap-1.5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-1">
         {officers.map((officer) => (

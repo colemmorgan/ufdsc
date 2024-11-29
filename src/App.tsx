@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="mx-auto my-4 sm:my-8 grid w-full max-w-[1228px] grid-cols-2 gap-2 px-2 sm:px-6 md:gap-4 lg:grid-cols-4 lg:px-10">
       <Hero />
-      <div className="hidden lg:block col-span-2 lg:col-span-1">
+      <div className="hidden lg:block col-span-2 lg:col-span-1 h-full">
         <Team />
       </div>
       <LandingGrid />

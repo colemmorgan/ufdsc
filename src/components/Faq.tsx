@@ -31,7 +31,7 @@ const faqs = [
 
 export default function Faq() {
   return (
-    <div className="col-span-2 lg:col-span-4 rounded-3xl bg-white p-6">
+    <div className="col-span-2 lg:col-span-4 rounded-2xl sm:rounded-3xl bg-white p-6">
       <p className="text-xl font-medium sm:text-2xl">
         Frequently Asked Questions
       </p>

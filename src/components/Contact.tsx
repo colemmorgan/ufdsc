@@ -33,7 +33,7 @@ const Contact: React.FC<ContactProps> = () => {
   };
 
   return (
-    <div className="mx-auto col-span-2 lg:col-span-4 p-6 bg-white rounded-3xl" id="contact">
+    <div className="mx-auto col-span-2 lg:col-span-4 p-6 bg-white rounded-2xl sm:rounded-3xl" id="contact">
       <h4 className="text-2xl font-medium">Contact</h4>
       <div className="grid gap-6 lg:gap-10 pt-3 sm:pt-6 lg:grid-cols-2">
         <div className="lg:pr-5">
