@@ -1,11 +1,55 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: "DM Sans", sans-serif;
   overflow-x: hidden !important;
-  background-color: #f3f6fb;
-  color: #202124;
+  background-color: #f4f4f4;
+  color: #262626;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("/fonts/HelveticaNeueBold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("/fonts/HelveticaNeueLight.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("/fonts/HelveticaNeueMedium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("/fonts/HelveticaNeueRoman.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CalSans";
+  src: url("/fonts/CalSans-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+.cal {
+  font-family: "CalSans", 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("/fonts/HelveticaNeueRoman.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
