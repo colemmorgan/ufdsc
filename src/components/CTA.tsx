@@ -1,4 +1,4 @@
-import Discord from "./Discord";
+import Discord from "./micro-interactions/Discord";
 
 export default function CTA() {
   return (
@@ -29,8 +29,8 @@ export default function CTA() {
 
 
 
-      <div className="mt-2 shadow-sm">
-        <div className="border-gray bs mx-auto max-w-[1280px] rounded-xl border bg-white px-10 py-6 cal">
+      <div className="mt-2 ">
+        <div className="border-gray bs mx-auto max-w-[1280px] rounded-xl border bg-white px-10 py-6 cal shadow-sm">
           <p className="text-3xl">
             A Google Developers program for university students.
           </p>

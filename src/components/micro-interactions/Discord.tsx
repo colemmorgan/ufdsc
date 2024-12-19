@@ -10,7 +10,7 @@ export default function Discord() {
                 </div>
                 <div className="w-10 h-0.5 bg-white rounded-full"/>
                 <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center pl-px">
-                    <img src="/nav-logo.png" alt="" className="w-[25px] h-3"/>
+                    <img src="/dsc.png" alt="" className="w-[25px] h-3"/>
                 </div>
                 <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#34BE8B]">
                     <FaPlus/>

@@ -2,7 +2,7 @@ export default function Nav() {
   return (
     <nav className="mx-auto grid h-14 w-full grid-cols-6 items-center justify-between rounded-xl px-12 tracking-wide">
       <figure>
-        <img src="/nav-logo.png" alt="" className="w-12" />
+        <img src="/dsc.png" alt="" className="w-12" />
       </figure>
       <div className="col-span-4 flex justify-center gap-8 text-sm">
         <a href="">Home</a>
