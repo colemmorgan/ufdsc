@@ -168,3 +168,7 @@ body {
     transform: rotate(-285deg);
   }
 }
+
+.officer-transition-timing {
+  transition: all 300ms ease;
+}

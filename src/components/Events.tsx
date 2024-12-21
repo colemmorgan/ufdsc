@@ -1,3 +1,5 @@
+import ClubCards from "./micro-interactions/ClubCards";
+
 export default function Events() {
   return (
     <div className="my-20">
@@ -42,8 +44,10 @@ export default function Events() {
             </p>
           </div>
           <div className="relative flex justify-center w-full">
-            <div className="w-72 border border-gray rounded-xl h-[190px]"></div>
-            <div className="w-80 absolute bg-white h-44 rounded-xl border border-grayer -bottom-0.5 rounded-b-none"></div>
+            <div className="w-72 border border-gray rounded-xl h-[190px]"/>
+            <div className="w-80 absolute bg-white h-44 rounded-xl border border-grayer -bottom-0.5 rounded-b-none">
+              <ClubCards/>
+            </div>
            
           </div>
         </div>
