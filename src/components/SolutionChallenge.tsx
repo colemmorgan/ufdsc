@@ -3,13 +3,13 @@ import Editor from "./micro-interactions/Editor";
 export default function SolutionChallenge() {
   return (
     <div className="py-20">
-      <h1 className="cal text-center text-4xl">
+      <h2 className="cal text-center text-4xl">
         Compete in Google Dev Competitions
-      </h1>
+      </h2>
       <p className="pt-3 text-center text-lg text-dull">
         Compete, collaborate, win prizes, and most importantly, learn.
       </p>
-      <div className="mt-8 flex w-full rounded-xl border border-gray bg-white py-16 shadow-sm items-center">
+      <div className="mt-8 flex w-full rounded-xl border border-gray bg-white py-16 shadow-sm items-center overflow-hidden">
         <div className="w-1/2 pl-12 pr-4">
           <p className="cal text-3xl leading-[1.125]">
             Compete in the Google DSC Solution Challenge this spring!

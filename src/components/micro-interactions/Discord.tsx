@@ -5,7 +5,7 @@ export default function Discord() {
     <div className=" border border-grayer rounded-xl h-[400px] p-1 translate-x-[9px]">
         <div className="w-full h-full rounded-lg border border-grayer flex overflow-hidden">
             <div className="bg-[#E4E5E9] h-full w-[68px] py-3 px-1 flex flex-col items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-xl">
+                <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-xl text-blue">
                     <FaDiscord/>
                 </div>
                 <div className="w-10 h-0.5 bg-white rounded-full"/>

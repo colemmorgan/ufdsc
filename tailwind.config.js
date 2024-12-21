@@ -15,6 +15,7 @@ export default {
         'grayer': "#E1E2E3 ",
         'blue': "#4385F5",
         'red': "#E94337",
+        'text-yellow':"#E5A200",
         "yellow": "#F8BC00",
         "green": "#36A855"
       },

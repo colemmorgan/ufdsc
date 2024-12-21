@@ -87,7 +87,7 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  animation: circular 8s linear infinite;
+  animation: circular 10s linear infinite;
 }
 
 .circular-container-2 {
@@ -96,7 +96,7 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  animation: circular2 8s linear infinite;
+  animation: circular2 10s linear infinite;
 }
 
 .circular-container-3 {
@@ -105,7 +105,7 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  animation: circular3 8s linear infinite;
+  animation: circular3 10s linear infinite;
 }
 
 .circular {
@@ -128,17 +128,17 @@ body {
 
 .c-img1 {
   transform: rotate(-360deg);
-  animation: counter-rotate 8s linear infinite;
+  animation: counter-rotate 10s linear infinite;
 }
 
 .c-img2 {
   transform: rotate(-360deg);
-  animation: counter-rotate-2 8s linear infinite;
+  animation: counter-rotate-2 10s linear infinite;
 }
 
 .c-img3 {
   transform: rotate(-360deg);
-  animation: counter-rotate-3 8s linear infinite;
+  animation: counter-rotate-3 10s linear infinite;
 }
 
 
