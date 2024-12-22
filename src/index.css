@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden !important;
+  background-color: #f4f4f4;
+  color: #262626;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("/fonts/HelveticaNeueBold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("/fonts/HelveticaNeueLight.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("/fonts/HelveticaNeueMedium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("/fonts/HelveticaNeueRoman.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CalSans";
+  src: url("/fonts/CalSans-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+.cal {
+  font-family: "CalSans", 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("/fonts/HelveticaNeueRoman.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes circular {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes circular2 {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(450deg);
+  }
+}
+
+@keyframes circular3 {
+  0% {
+    transform: rotate(-75deg);
+  }
+  100% {
+    transform: rotate(285deg);
+  }
+}
+
+.circular-container {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: circular 10s linear infinite;
+}
+
+.circular-container-2 {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: circular2 10s linear infinite;
+}
+
+.circular-container-3 {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: circular3 10s linear infinite;
+}
+
+.circular {
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.circular1 {
+  transform: translate(-50%, -110px);
+}
+
+.circular2 {
+  transform: translate(-50%, -110px); 
+}
+
+.circular3 {
+  transform: translate(-50%, -150px); 
+}
+
+.c-img1 {
+  transform: rotate(-360deg);
+  animation: counter-rotate 10s linear infinite;
+}
+
+.c-img2 {
+  transform: rotate(-360deg);
+  animation: counter-rotate-2 10s linear infinite;
+}
+
+.c-img3 {
+  transform: rotate(-360deg);
+  animation: counter-rotate-3 10s linear infinite;
+}
+
+
+@keyframes counter-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes counter-rotate-2 {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(-450deg);
+  }
+}
+
+@keyframes counter-rotate-3 {
+  0% {
+    transform: rotate(75deg);
+  }
+  100% {
+    transform: rotate(-285deg);
+  }
+}
+
+.officer-transition-timing {
+  transition: all 300ms ease;
+}
