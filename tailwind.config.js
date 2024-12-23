@@ -7,13 +7,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        'black': "#202124",
+        'black': "#202020",
         'white': "#ffffff",
-        'off-white': "#F3F6FB",
+        'off-white': "#f4f4f4",
+        'dull': "#707070",
+        'gray': "#E5E7EB",
+        'grayer': "#E1E2E3 ",
         'blue': "#4385F5",
-        'green': '#36A855',
-        'red' : '#E94337',
-        'yellow': "#F8BC00"
+        'red': "#E94337",
+        'text-yellow':"#E5A200",
+        "yellow": "#F8BC00",
+        "green": "#36A855"
+      },
+      fontFamily: {
+        sans: ['HelveticaNeue', 'sans-serif'],
       },
     },
   },
