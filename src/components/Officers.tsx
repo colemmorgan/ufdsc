@@ -53,13 +53,12 @@ const officers: Officer[] = [
 
 export default function Officers() {
   return (
-    <div className="py-20">
-      <h2 className="cal text-center text-4xl">Meet the Team</h2>
-      <p className="pt-3 text-center text-lg text-dull">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod,
-        explicabo?
+    <div className="py-16 sm:py-20" id="officers">
+      <h2 className="cal text-center text-3xl sm:text-4xl">Meet the Team</h2>
+      <p className="pt-3 text-center sm:text-lg text-dull px-3">
+        We have a diverse team of officers with a wide variety of skill sets.
       </p>
-      <div className="mx-auto mt-8 grid max-w-4xl grid-cols-4 gap-2">
+      <div className="mx-auto mt-8 grid max-w-4xl grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-2">
         {officers.map((officer) => (
           <Officer key={officer.name} officer={officer} />
         ))}

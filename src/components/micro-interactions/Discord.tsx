@@ -2,20 +2,20 @@ import { FaArrowUp, FaDiscord, FaHashtag, FaPlus, FaSearch,  } from "react-icons
 
 export default function Discord() {
   return (
-    <div className=" border border-grayer rounded-xl h-[400px] p-1 translate-x-[9px]">
+    <div className=" border border-grayer rounded-xl h-[400px] p-1 xl:translate-x-[9px]">
         <div className="w-full h-full rounded-lg border border-grayer flex overflow-hidden">
-            <div className="bg-[#E4E5E9] h-full w-[68px] py-3 px-1 flex flex-col items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-xl text-blue">
+            <div className="bg-[#E4E5E9] h-full w-[64px] py-3 px-1 flex flex-col items-center gap-3">
+                <div className="w-9 h-9 rounded-full bg-white flex items-center justify-center text-xl text-blue">
                     <FaDiscord/>
                 </div>
-                <div className="w-10 h-0.5 bg-white rounded-full"/>
-                <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center pl-px">
-                    <img src="/dsc.png" alt="" className="w-[25px] h-3"/>
+                <div className="w-9 h-0.5 bg-white rounded-full"/>
+                <div className="w-9 h-9 rounded-full bg-white flex items-center justify-center pl-px">
+                    <img src="/dsc.png" alt="" className="w-[20px] "/>
                 </div>
-                <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#34BE8B]">
+                <div className="w-9 h-9 rounded-full bg-white flex items-center justify-center text-[#34BE8B]">
                     <FaPlus/>
                 </div>
-                <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#34BE8B]">
+                <div className="w-9 h-9 rounded-full bg-white flex items-center justify-center text-[#34BE8B]">
                     <FaSearch/>
                 </div>
             </div>

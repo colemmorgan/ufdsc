@@ -8,10 +8,10 @@ import {
 
 export default function Editor() {
   return (
-    <div className="flex h-full w-1/2 items-center justify-end translate-x-[9px]">
-      <div className="h-96 w-[475px] rounded-xl border border-gray p-1">
+    <div className="flex h-full lg:w-1/2 items-center justify-end lg:translate-x-[9px]">
+      <div className=" w-[350px] sm:h-[370px] sm:w-[475px] rounded-xl border border-gray p-1">
         <div className="flex h-full overflow-hidden rounded-lg border border-gray">
-          <div className="flex flex-col items-center bg-off-white py-4 text-xl text-dull">
+          <div className="hidden sm:flex flex-col items-center bg-off-white py-4 text-xl text-dull">
             <span className="border-l border-black px-3.5 py-3 text-black">
               <VscFiles />
             </span>
@@ -34,12 +34,12 @@ export default function Editor() {
                 tree.cpp
               </span>
             </div>
-            <div className="p-3 text-sm text-dull">
+            <div className="p-3 text-[11px] sm:text-sm text-dull">
               <p>using namespace std;</p>
               <div className="pt-3 flex">
                 tree::tree(){}; // Todo: Create constuctor&nbsp;
                 <div className="relative h-4 w-0.5 bg-yellow">
-                  <span className="absolute -top-4 whitespace-nowrap rounded-sm bg-yellow px-2 text-[9px] text-black">
+                  <span className="absolute -top-3 sm:-top-4 whitespace-nowrap rounded-sm bg-yellow px-2 text-[9px] text-black">
                     M Dey
                   </span>
                 </div>
@@ -56,7 +56,7 @@ export default function Editor() {
               <div className="flex pt-3">
                 // Recursive inorder tree traversal.&nbsp;
                 <div className="relative h-4 w-0.5 bg-blue">
-                  <span className="absolute -top-4 whitespace-nowrap rounded-sm bg-blue px-2 text-[9px] text-off-white">
+                  <span className="absolute -top-3 sm:-top-4 whitespace-nowrap rounded-sm bg-blue px-2 text-[9px] text-off-white">
                     C Morgan
                   </span>
                 </div>

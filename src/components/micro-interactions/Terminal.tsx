@@ -45,7 +45,7 @@ export default function Terminal() {
   }, []);
 
   return (
-    <div className="h-44 w-full overflow-hidden rounded-md rounded-b-none border border-b-0 border-gray">
+    <div className="h-44 w-full overflow-hidden rounded-md rounded-b-none border border-b-0 border-gray mt-6">
       <div className="flex w-full items-center gap-2 bg-off-white px-3 py-2">
         <div className="h-2 w-2 rounded-full bg-red" />
         <div className="h-2 w-2 rounded-full bg-yellow" />

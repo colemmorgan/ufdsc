@@ -3,18 +3,20 @@ import Terminal from "./micro-interactions/Terminal";
 
 export default function About() {
   return (
-    <div className="py-20">
-      <h2 className="cal mt-4 text-center text-4xl">
-        Focused on Project-Based Learning
-      </h2>
-      <p className="pt-3 text-center text-lg text-dull">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod,
-        explicabo?
-      </p>
-      <div className="mt-8 grid grid-cols-3 gap-4 tracking-wide">
+    <div className="py-16 sm:py-20" id="about">
+      <div className="px-4">
+        <h2 className="cal mt-4 text-center text-3xl sm:text-4xl">
+          Focused on Project-Based Learning
+        </h2>
+        <p className="pt-3 text-center text-dull sm:text-lg">
+          Our goal is to help members learn full-stack development and create
+          their own applications.
+        </p>
+      </div>
+      <div className="mt-8 grid gap-4 tracking-wide md:grid-cols-2 lg:grid-cols-3">
         <div className="flex flex-col justify-between rounded-md border border-gray bg-white px-5 py-6 shadow-sm">
           <div>
-            <span className="rounded-md bg-gray p-2 font-mono text-sm text-dull">
+            <span className="rounded-md bg-blue p-2 font-mono text-sm text-white">
               01
             </span>
             <p className="mt-5 text-[18px] font-medium">Become a Member</p>
@@ -23,7 +25,7 @@ export default function About() {
               Discord.
             </p>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="mt-16 flex items-center gap-3">
             <div className="flex">
               <figure className="-mr-6 rounded-full border-2 border-blue">
                 <img
@@ -58,33 +60,33 @@ export default function About() {
           </div>
         </div>
 
-        <div className="h-[380px] overflow-hidden rounded-md border border-gray bg-white shadow-sm">
+        <div className="overflow-hidden rounded-md border border-gray bg-white shadow-sm">
           <div className="px-5 py-6">
-            <span className="rounded-md bg-gray p-2 font-mono text-sm text-dull">
+            <span className="rounded-md bg-blue p-2 font-mono text-sm text-white">
               02
             </span>
             <p className="mt-5 text-[18px] font-medium">
-              Attend Technical Workshops
+              Learn Google Technologies
             </p>
             <p className="mt-1.5 text-dull">
-              Anyone can become a member! Membership is as simple as joining our
-              Discord.
+              Dive into the world of Google technologies! Expand your skills
+              with resources and workshops.
             </p>
           </div>
           <Spinner />
         </div>
 
-        <div className="flex h-[380px] flex-col justify-between rounded-md border border-gray bg-white px-5 shadow-sm">
+        <div className="flex flex-col justify-between rounded-md border border-gray bg-white px-5 shadow-sm">
           <div className="py-6">
-            <span className="rounded-md bg-gray p-2 font-mono text-sm text-dull">
+            <span className="rounded-md bg-blue p-2 font-mono text-sm text-white">
               03
             </span>
             <p className="mt-5 text-[18px] font-medium">
               Create with Other Developers
             </p>
             <p className="mt-1.5 text-dull">
-              Anyone can become a member! Membership is as simple as joining our
-              Discord.
+              Collaborate with a passionate community of developers! Work
+              together on exciting projects and coding challenges.
             </p>
           </div>
           <Terminal />

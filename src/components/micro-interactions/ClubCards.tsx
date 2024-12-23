@@ -25,7 +25,7 @@ const clubs = [
   {
     icon: "/photos/club-icons/sec.png",
     name: "Software Engineering Club",
-    desc: "Strives both to teach you real-world skills, and to get you an internship at FAANG/big tech.",
+    desc: "Strives both to teach you real-world skills, and to get you an internship at FAANG/big tech through frequent workshops.",
   },
 ];
 

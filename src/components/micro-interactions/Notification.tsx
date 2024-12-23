@@ -22,9 +22,9 @@ export default function Notification() {
   }, []);
 
   return (
-    <div className="relative flex w-full items-center justify-center p-4">
+    <div className="relative flex w-full items-center justify-center p-4 mt-16 ">
       <div className="mx-6 h-16 w-full rounded-xl border border-grayer bg-[#fafafa] shadow-sm" />
-      <div className="absolute top-2 h-16 w-[calc(100%-56px)] rounded-xl border border-grayer bg-[#fafafa] shadow-sm" />
+      <div className="absolute top-2 h-16 w-[calc(100%-40px)] rounded-xl border border-grayer bg-[#fafafa] shadow-sm" />
 
       <AnimatePresence>
         <AnimatedNotification key={value} name={notifications[value].name} time={notifications[value].time}/>
@@ -44,19 +44,19 @@ const AnimatedNotification: React.FC<AnimatedNotificationProps> = ({name,time}) 
     initial={{x:30, opacity:0}}
     animate={{x:0, opacity:1}}
     transition={{duration: 0.6, ease: easeOut}}
-    className="absolute -top-4 flex h-20 w-[calc(100%-24px)] rounded-xl border border-grayer bg-[#fafafa] px-5 py-3.5 shadow-sm">
+    className="absolute -top-2 sm:-top-4 flex h-[72px] sm:h-20 w-[calc(100%)] rounded-xl border border-grayer bg-[#fafafa] px-3 sm:px-5 py-3.5 shadow-sm">
       <div className="flex items-center">
-        <figure className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue text-xl text-white">
+        <figure className="flex aspect-square h-8 sm:h-10 items-center justify-center rounded-xl bg-blue text-lg sm:text-xl text-white">
           <FaLinkedinIn />
         </figure>
       </div>
-      <div className="w-full pl-5">
+      <div className="w-full pl-3 sm:pl-5">
         <div className="flex w-full items-center justify-between">
-          <p>New Notication</p>
-          <p className="text-sm font-light">{time}</p>
+          <p className="text-sm sm:text-base">New Notication</p>
+          <p className="text-xs sm:text-sm font-light">{time}</p>
         </div>
-        <p className="pt-0.5 text-sm text-dull">
-          {name} would like to connect with you!
+        <p className="pt-1 sm:pt-0.5 text-xs sm:text-sm text-dull">
+          {name} would like to connect<span className="hidden sm:inline"> with you</span>!
         </p>
       </div>
     </motion.div>

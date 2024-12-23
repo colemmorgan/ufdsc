@@ -10,11 +10,9 @@ import SolutionChallenge from "./components/SolutionChallenge";
 export default function App() {
   return (
     <div className="px-1">
-      <div className="mx-auto min-h-screen max-w-[1200px] border-x border-grayer px-3">
+      <div className="mx-auto min-h-screen max-w-[1200px] border-x border-grayer px-1.5 sm:px-3">
         <Nav />
-
         <CTA />
-
         <About />
         <SolutionChallenge />
         <Events />
