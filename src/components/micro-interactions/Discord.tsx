@@ -1,54 +1,111 @@
-import { FaArrowUp, FaDiscord, FaHashtag, FaPlus, FaSearch,  } from "react-icons/fa";
+import {
+  FaArrowUp,
+  FaDiscord,
+  FaHashtag,
+  FaPlus,
+  FaSearch,
+  FaUser,
+} from "react-icons/fa";
+
+const messages = [
+  "Hi, welcome to the Developer Student Club at the University of Florida! Do you have any questions?",
+  "Hello, how do I become a member?",
+  "Becoming a member is as easy as joining our discord server!",
+  "Do you have any exciting events coming soon?",
+  "Yes! This spring the club is competing in the Google DSC Solution Challenge. There is a large prize pool and it is a great opprutunity to create a project that you can add to you Resume",
+];
 
 export default function Discord() {
   return (
-    <div className=" border border-grayer rounded-xl h-[400px] p-1 xl:translate-x-[9px]">
-        <div className="w-full h-full rounded-lg border border-grayer flex overflow-hidden">
-            <div className="bg-[#E4E5E9] h-full w-[64px] py-3 px-1 flex flex-col items-center gap-3">
-                <div className="w-9 h-9 rounded-full bg-white flex items-center justify-center text-xl text-blue">
-                    <FaDiscord/>
-                </div>
-                <div className="w-9 h-0.5 bg-white rounded-full"/>
-                <div className="w-9 h-9 rounded-full bg-white flex items-center justify-center pl-px">
-                    <img src="/dsc.png" alt="" className="w-[20px] "/>
-                </div>
-                <div className="w-9 h-9 rounded-full bg-white flex items-center justify-center text-[#34BE8B]">
-                    <FaPlus/>
-                </div>
-                <div className="w-9 h-9 rounded-full bg-white flex items-center justify-center text-[#34BE8B]">
-                    <FaSearch/>
-                </div>
-            </div>
-
-
-            <div className="bg-[#F2F3F5] w-[116px] py-5 tracking-wider">
-                <p className="font-medium text-sm px-3 ">UF DSC</p>
-                <div className="grid mt-1.5 px-1 text-xs gap-1.5">
-
-                    <div className="flex gap-1 items-center p-1.5 w-full text-[#939AA0]">
-                        <span><FaHashtag/></span>
-                        <span>Questions</span>
-                    </div>
-                    <div className="flex gap-1 items-center p-1.5 w-full text-[#939AA0]">
-                        <span><FaHashtag/></span>
-                        <span>Welcome</span>
-                    </div>
-                    <div className="flex gap-1 items-center p-1.5 w-full text-[#878B90] bg-[#D4D7E0] rounded-sm">
-                        <span><FaHashtag/></span>
-                        <span>General</span>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div className="flex flex-col justify-end py-1 pl-1.5 pr-[7px] w-[340px]">
-                <div className="bg-[#ECEDEF] rounded-sm text-xs py-2 px-4 text-[#63686E] flex justify-between items-center tracking-wide">
-                    <p>Message #General</p>
-                    <span className="bg-[#63686E] p-0.5 rounded-full text-off-white text-[10px]"><FaArrowUp/></span>
-                </div>
-            </div>
+    <div className="h-[400px] w-full rounded-xl border border-grayer p-1 sm:w-auto xl:translate-x-[9px]">
+      <div className="flex h-full w-full overflow-hidden rounded-lg border border-grayer">
+        <div className="hidden h-full w-[64px] flex-col items-center gap-3 bg-off-white px-1 py-3 sm:flex">
+          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-xl text-blue">
+            <FaDiscord />
+          </div>
+          <div className="h-0.5 w-9 rounded-full bg-white" />
+          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white pl-px">
+            <img src="/dsc.png" alt="" className="w-[20px]" />
+          </div>
+          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#34BE8B]">
+            <FaPlus />
+          </div>
+          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#34BE8B]">
+            <FaSearch />
+          </div>
         </div>
+
+        <div className="flex w-full flex-col justify-between pb-1 sm:w-[400px]">
+          <div className="flex items-center gap-1.5 bg-off-white px-2 py-2.5 text-xs text-dull">
+            <FaHashtag />
+            <span className="mt-0.5 sm:mt-0">General Chat</span>
+          </div>
+
+          <div className="flex h-full flex-col gap-4 overflow-y-auto px-3 py-4">
+            <div className="flex gap-2">
+              <figure className="flex h-8 w-8 min-w-8 items-center justify-center rounded-full border border-gray">
+                <img src="/dsc.png" alt="" className="w-5" />
+              </figure>
+              <p className="text-xs tracking-wide text-dull">
+                Hi, welcome to the Developer Student Club at the University of
+                Florida! Do you have any questions?
+              </p>
+            </div>
+
+            <div className="flex gap-2">
+              <figure className="flex h-8 w-8 min-w-8 items-center justify-center rounded-full border border-gray text-xs text-dull">
+                <FaUser />
+              </figure>
+              <p className="text-xs tracking-wide text-dull">
+                Hello, how do I become a member?
+              </p>
+            </div>
+
+            <div className="flex gap-2">
+              <figure className="flex h-8 w-8 min-w-8 items-center justify-center rounded-full border border-gray">
+                <img src="/dsc.png" alt="" className="w-5" />
+              </figure>
+              <p className="text-xs tracking-wide text-dull">
+                All you need to become a member is to join our discord server!
+              </p>
+            </div>
+
+            <div className="flex gap-2">
+              <figure className="flex h-8 w-8 min-w-8 items-center justify-center rounded-full border border-gray text-xs text-dull">
+                <FaUser />
+              </figure>
+              <p className="text-xs tracking-wide text-dull">
+                Do you have any exciting events coming soon?
+              </p>
+            </div>
+
+            <div className="flex gap-2">
+              <figure className="flex h-8 w-8 min-w-8 items-center justify-center rounded-full border border-gray">
+                <img src="/dsc.png" alt="" className="w-5" />
+              </figure>
+              <p className="text-xs tracking-wide text-dull">
+                Yes! This spring the club is competing in the Google DSC
+                Solution Challenge. More coming soon!
+              </p>
+            </div>
+          </div>
+
+          <div className="pl-1.5 pr-[7px]">
+            <div className="flex items-center justify-between rounded-sm bg-[#ECEDEF] px-4 py-2 text-xs tracking-wide text-[#63686E]">
+              <p>Message #General</p>
+              <span className="rounded-full bg-[#63686E] p-0.5 text-[10px] text-off-white">
+                <FaArrowUp />
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
+
+type DSCMessageProps = {};
+
+const ComponentName: React.FC<DSCMessageProps> = () => {
+  return <div>Have a good coding</div>;
+};

@@ -4,7 +4,7 @@ import Terminal from "./micro-interactions/Terminal";
 export default function About() {
   return (
     <div className="py-16 sm:py-20" id="about">
-      <div className="px-4">
+      <div className="px-3.5">
         <h2 className="cal mt-4 text-center text-3xl sm:text-4xl">
           Focused on Project-Based Learning
         </h2>

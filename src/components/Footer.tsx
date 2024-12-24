@@ -3,7 +3,7 @@ import { FaDiscord, FaGithub, FaInstagram } from "react-icons/fa";
 export default function Footer() {
   return (
     <div className="border-t border-grayer py-20 sm:py-24">
-      <div className="mx-auto flex flex-col lg:flex-row gap-20 lg:gap-32 max-w-[1200px] px-3">
+      <div className="mx-auto flex flex-col lg:flex-row gap-20 lg:gap-32 max-w-[1200px] px-5 sm:px-3">
         <div className="whitespace-nowrap">
           <p className="cal text-3xl">Developer Student Club</p>
           <p className="sm:pt-2 pt-4 text-sm leading-relaxed text-dull">

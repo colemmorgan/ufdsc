@@ -3,8 +3,8 @@ import Discord from "./micro-interactions/Discord";
 export default function CTA() {
   return (
     <>
-      <div className="mx-auto mt-6 flex max-w-[1280px] flex-col gap-12 xl:gap-0 xl:flex-row items-center overflow-hidden rounded-xl border border-gray bg-white px-6 lg:px-12 xl:px-0 xl:pb-16 xl:pl-12 py-12 sm:py-20 shadow-sm">
-        <div className="xl:w-3/5 text-center xl:text-left">
+      <div className="mx-auto mt-5 sm:mt-6 flex max-w-[1280px] flex-col gap-12 xl:gap-0 xl:flex-row items-center overflow-hidden rounded-xl border border-gray bg-white px-4 lg:px-12 xl:px-0 xl:pb-16 xl:pl-12 py-12 sm:py-20 shadow-sm">
+        <div className="xl:w-3/5 text-center xl:text-left px-2">
           <h1 className="cal text-4xl md:text-[52px] leading-tight md:leading-[1.125] ">
             Build<span className="hidden sm:inline-block">, Learn,</span> <span className="sm:hidden"> &</span> Innovate <br className="hidden xl:inline-block"/>
             with <br className="hidden sm:inline-block xl:hidden"/> Developer <br className="hidden xl:inline-block"/>
@@ -18,12 +18,12 @@ export default function CTA() {
           <a
             href="https://discord.gg/waWVF8rHP8"
             target="_blank"
-            className="mt-3 inline-block rounded-md bg-blue px-8 py-2 text-sm tracking-wide text-white"
+            className="mt-4 sm:mt-3 inline-block rounded-md bg-blue px-8 pt-2.5 pb-2 sm:py-2 text-sm tracking-wide text-white"
           >
             Join the Club!
           </a>
         </div>
-        <div className="flex xl:w-2/5 flex-col xl:items-end">
+        <div className="flex w-full sm:w-auto xl:w-2/5 flex-col xl:items-end">
           <Discord />
         </div>
       </div>
