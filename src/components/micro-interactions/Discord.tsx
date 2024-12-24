@@ -7,13 +7,13 @@ import {
   FaUser,
 } from "react-icons/fa";
 
-const messages = [
-  "Hi, welcome to the Developer Student Club at the University of Florida! Do you have any questions?",
-  "Hello, how do I become a member?",
-  "Becoming a member is as easy as joining our discord server!",
-  "Do you have any exciting events coming soon?",
-  "Yes! This spring the club is competing in the Google DSC Solution Challenge. There is a large prize pool and it is a great opprutunity to create a project that you can add to you Resume",
-];
+// const messages = [
+//   "Hi, welcome to the Developer Student Club at the University of Florida! Do you have any questions?",
+//   "Hello, how do I become a member?",
+//   "Becoming a member is as easy as joining our discord server!",
+//   "Do you have any exciting events coming soon?",
+//   "Yes! This spring the club is competing in the Google DSC Solution Challenge. There is a large prize pool and it is a great opprutunity to create a project that you can add to you Resume",
+// ];
 
 export default function Discord() {
   return (
@@ -104,8 +104,4 @@ export default function Discord() {
   );
 }
 
-type DSCMessageProps = {};
 
-const ComponentName: React.FC<DSCMessageProps> = () => {
-  return <div>Have a good coding</div>;
-};
