@@ -10,12 +10,6 @@ export default function Footer() {
             © Copyright 2024 UF Developer Student Club. <br /> All Rights
             Reserved.
           </p>
-          <p className="pt-1 text-sm text-dull">
-            Design inspired by{" "}
-            <a href="https://cal.com/" target="_blank" className="underline">
-              Cal.com
-            </a>
-          </p>
           <div className="flex items-center gap-4 pt-3 text-[22px] text-dull">
             
             <a href="https://github.com/colemmorgan/ufdsc" target="_blank"><FaGithub /></a>
