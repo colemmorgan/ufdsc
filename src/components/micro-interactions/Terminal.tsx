@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 import { motion, AnimatePresence} from 'framer-motion';
 
 const messages = [
-  'Cole Morgan created a repository "new project".',
-  'Moinak Dey created a new branch "md/Animations".',
-  'Harshil Puhuja created a pull request "PR 1".',
-  'Oliver Jen deployed the project to vercel.',
+  'Andrew Chuang-Saladin created a repository "new project".',
+  'Sargam Thakur created a new branch "md/Animations".',
+  'Harshil Pahuja created a pull request "PR 1".',
+  'Jack Harris deployed the project to vercel.',
 ];
 
 const containerVariants = {

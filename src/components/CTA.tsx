@@ -7,8 +7,8 @@ export default function CTA() {
         <div className="xl:w-3/5 text-center xl:text-left px-2">
           <h1 className="cal text-4xl md:text-[52px] leading-tight md:leading-[1.125] ">
             Build<span className="hidden sm:inline-block">, Learn,</span> <span className="sm:hidden"> &</span> Innovate <br className="hidden xl:inline-block"/>
-            with <br className="hidden sm:inline-block xl:hidden"/> Developer <br className="hidden xl:inline-block"/>
-            Student Club
+            with <br className="hidden sm:inline-block xl:hidden"/> Google  <br className="hidden xl:inline-block"/>
+            Developer Group on Campus
           </h1>
 
           <p className="pt-3 sm:pt-1 md:text-lg tracking-wider text-dull ">
@@ -40,7 +40,7 @@ export default function CTA() {
             university students.
           </p>
           <div className="mt-10 flex justify-between text-lg sm:text-xl">
-            <p className="">500+ MEMBERS</p>
+            <p className="">200+ MEMBERS</p>
             <p>EST. 2020</p>
           </div>
         </div>

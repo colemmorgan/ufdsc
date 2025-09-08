@@ -39,7 +39,7 @@ export default function Nav() {
               target="_blank"
               className="rounded-md bg-blue px-4 pb-1.5 pt-2 text-xs text-white sm:py-2 sm:text-sm"
             >
-              DSC Discord
+              UF GDG Discord
             </a>
             <button
               className="text-2xl lg:hidden"

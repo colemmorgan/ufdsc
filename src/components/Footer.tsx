@@ -5,16 +5,16 @@ export default function Footer() {
     <div className="border-t border-grayer py-20 sm:py-24">
       <div className="mx-auto flex flex-col lg:flex-row gap-20 lg:gap-32 max-w-[1200px] px-5 sm:px-3">
         <div className="whitespace-nowrap">
-          <p className="cal text-3xl">Developer Student Club</p>
+          <p className="cal text-3xl">Google Developer Group on Campus</p>
           <p className="sm:pt-2 pt-4 text-sm leading-relaxed text-dull">
-            © Copyright 2024 UF Developer Student Club. <br /> All Rights
+            © Copyright 2025 UF Google Developer Group on Campus. <br /> All Rights
             Reserved.
           </p>
           <div className="flex items-center gap-4 pt-3 text-[22px] text-dull">
             
-            <a href="https://github.com/colemmorgan/ufdsc" target="_blank"><FaGithub /></a>
+            <a href="https://github.com/9lde/ufgdgoncampus" target="_blank"><FaGithub /></a>
             <a href="https://discord.gg/waWVF8rHP8" target="_blank"><FaDiscord /></a>
-            <a href="https://www.instagram.com/dsc.uf/" target="_blank"><FaInstagram /></a>
+            <a href="https://www.instagram.com/gdgatuf/" target="_blank"><FaInstagram /></a>
             
           </div>
           <p className="pt-3 text-sm leading-relaxed">
@@ -35,15 +35,15 @@ export default function Footer() {
           <div>
             <p className="font-medium">Links</p>
             <div className="grid gap-5 mt-5 text-sm pr-2">
-              <a target="_blank" href="https://www.instagram.com/dsc.uf/">Instagram</a>
+              <a target="_blank" href="https://www.instagram.com/gdgatuf/">Instagram</a>
               <a target="_blank" href="https://discord.gg/waWVF8rHP8">Discord</a>
-              <a target="_blank" href="https://github.com/colemmorgan/ufdsc">Source Code</a>
+              <a target="_blank" href="https://github.com/9lde/ufgdgoncampus">Source Code</a>
             </div>
           </div>
           <div>
-            <p className="font-medium">DSC Info</p>
+            <p className="font-medium">GDG on Campus Info</p>
             <div className="grid gap-5 mt-5 text-sm pr-2">
-              <a target="_blank" href="https://developers.google.com/community/gdsc">About DSC</a>
+              <a target="_blank" href="https://developers.google.com/community">About GDG on Campus</a>
               <a target="_blank" href="https://developers.google.com/community/gdsc-solution-challenge">Solution Challenge</a>
             </div>
           </div>

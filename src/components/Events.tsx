@@ -27,9 +27,9 @@ export default function Events() {
 
         <div className="rounded-xl border border-gray bg-white p-6 lg:p-8 shadow-sm flex flex-col justify-between">
           <div>
-            <p className="text-lg sm:text-xl font-medium">General Board Meetings</p>
+            <p className="text-lg sm:text-xl font-medium">General Body Meetings</p>
             <p className="pt-2 sm:pt-3 text-dull">
-              Stay informed and connected through our General Board Meetings,
+              Stay informed and connected through our General Body Meetings,
               featuring club updates, upcoming events, and opportunities to
               engage with our community.
             </p>

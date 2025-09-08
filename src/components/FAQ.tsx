@@ -5,17 +5,17 @@ const faqs = [
   {
     question: "Do I need programming experience to join?",
     answer:
-      "No, but most projects require that you be willing to learn. All skill levels are welcome, our tech leads will often host workshops, share resources & advice, and provide all the help that you need to get started.",
+      "All skill levels are welcome, but our projects require that you be willing to learn. Our tech leads will often host workshops, share resources & advice, and provide all the help that you need to get started.",
   },
   {
     question: "Who should I reach out to if I have questions?",
     answer:
-      "The quickest way to get in touch with the team is to reach out to an officer on discord. Otherwise, you can send us a message from the contact form below.",
+      "The quickest way to get in touch with the team is to reach out to an officer on discord.",
   },
   {
     question: "How frequently do events and workshops occur?",
     answer:
-      "We try to have as many as possible during the semester. Join our Discord to stay updated.",
+      "Our technical leads host biweekly workshops, and we host numerous social events throughout the semester. Join our Discord to stay updated.",
   },
   {
     question: "What should I bring to the workshops?",
@@ -25,7 +25,7 @@ const faqs = [
   {
     question: "Why should I join?",
     answer:
-      "Joining the UFDSC is a great way to gain experience for your CV and develop a strong project portfolio. Working on open source projects or leading a group as a tech-lead positively distinguishes you from other job applicants.",
+      "Joining the UF Google Developer Group on Campus is a great way to gain experience for your CV and develop a strong project portfolio. Working on open source projects or leading a group as a tech-lead positively distinguishes you from other job applicants.",
   },
 ];
 export default function FAQ() {

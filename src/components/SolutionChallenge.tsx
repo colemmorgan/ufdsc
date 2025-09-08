@@ -14,11 +14,11 @@ export default function SolutionChallenge() {
       <div className="mt-8 flex flex-col gap-12 lg:gap-0 lg:flex-row w-full items-center overflow-hidden rounded-xl border border-gray bg-white py-10 sm:py-16 shadow-sm">
         <div className="lg:w-1/2 px-6 lg:px-0 lg:pl-12 lg:pr-4 ">
           <p className="cal text-2xl sm:text-3xl leading-[1.125]">
-            Compete in the Google DSC Solution Challenge this spring!
+            Compete in the Google Solution Challenge this spring!
           </p>
           <div className="mt-4 grid gap-3 leading-relaxed tracking-wide text-dull text-[15px] sm:text-base">
             <p>
-              The Solution Challenge is a contest where DSCs create innovative
+              The Solution Challenge is a contest where GDG on Campus members create innovative
               solutions to local community problems using Google products or
               platforms.
             </p>

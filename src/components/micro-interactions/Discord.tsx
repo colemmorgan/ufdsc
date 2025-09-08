@@ -8,11 +8,11 @@ import {
 } from "react-icons/fa";
 
 // const messages = [
-//   "Hi, welcome to the Developer Student Club at the University of Florida! Do you have any questions?",
+//   "Hi, welcome to the GDG on Campus at the University of Florida! Do you have any questions?",
 //   "Hello, how do I become a member?",
 //   "Becoming a member is as easy as joining our discord server!",
 //   "Do you have any exciting events coming soon?",
-//   "Yes! This spring the club is competing in the Google DSC Solution Challenge. There is a large prize pool and it is a great opprutunity to create a project that you can add to you Resume",
+//   "Yes! This spring the club is competing in the Google Solution Challenge. There is a large prize pool and it is a great opprutunity to create a project that you can add to your Resume",
 // ];
 
 export default function Discord() {
@@ -47,7 +47,7 @@ export default function Discord() {
                 <img src="/dsc.png" alt="" className="w-5" />
               </figure>
               <p className="text-xs tracking-wide text-dull">
-                Hi, welcome to the Developer Student Club at the University of
+                Hi, welcome to the GDG on Campus at the University of
                 Florida! Do you have any questions?
               </p>
             </div>
@@ -84,7 +84,7 @@ export default function Discord() {
                 <img src="/dsc.png" alt="" className="w-5" />
               </figure>
               <p className="text-xs tracking-wide text-dull">
-                Yes! This spring the club is competing in the Google DSC
+                Yes! This spring the club is competing in the Google
                 Solution Challenge. More coming soon!
               </p>
             </div>

@@ -27,36 +27,36 @@ export default function About() {
           </div>
           <div className="mt-16 flex items-center gap-3">
             <div className="flex">
-              <figure className="-mr-6 rounded-full border-2 border-blue">
+              <figure className="-mr-6 rounded-full -2 border-blue">
                 <img
-                  src="/photos/officers/moinak-dey.jpg"
+                  src="/photos/officers/JackHar.JPG"
                   alt=""
                   className="h-14 w-14 rounded-full"
                 />
               </figure>
               <figure className="-mr-6 rounded-full border-2 border-red">
                 <img
-                  src="/photos/officers/oliver-jen.jfif"
+                  src="/photos/officers/harshil_profile.jpg"
                   alt=""
                   className="h-14 w-14 rounded-full"
                 />
               </figure>
               <figure className="-mr-6 rounded-full border-2 border-yellow">
                 <img
-                  src="/photos/officers/cj-alexander.jfif"
+                  src="/photos/officers/sargam.png"
                   alt=""
                   className="h-14 w-14 rounded-full"
                 />
               </figure>
               <figure className="rounded-full border-2 border-green">
                 <img
-                  src="/photos/officers/harshil-pahuja.jfif"
+                  src="/photos/officers/Andrew.JPG"
                   alt=""
                   className="h-14 w-14 rounded-full"
                 />
               </figure>
             </div>
-            <span className="text-sm text-dull">+500 Members!</span>
+            <span className="text-sm text-dull">+200 Members!</span>
           </div>
         </div>
 

@@ -3,11 +3,11 @@ import { useEffect, useState } from "react";
 import { FaLinkedinIn } from "react-icons/fa";
 
 const notifications = [
-  { name: "Moinak Dey", time: "5m Ago" },
-  { name: "Harshil Pahuja", time: "10m Ago" },
-  { name: "Oliver Jen", time: "15m Ago" },
-  { name: "CJ Alexander", time: "20m Ago" },
-  { name: "Paraman Galipalli", time: "Just Now" },
+  { name: "Harshil Pahuja", time: "5m ago" },
+  { name: "Sargam Thakur", time: "10m ago" },
+  { name: "Andrew Chuang-Saladin", time: "15m ago" },
+  { name: "Jack Harris", time: "20m ago" },
+  { name: "Sivan Pushpagiri", time: "Just Now" },
 ];
 
 export default function Notification() {
@@ -52,7 +52,7 @@ const AnimatedNotification: React.FC<AnimatedNotificationProps> = ({name,time}) 
       </div>
       <div className="w-full pl-3 sm:pl-5">
         <div className="flex w-full items-center justify-between">
-          <p className="text-sm sm:text-base">New Notication</p>
+          <p className="text-sm sm:text-base">New Notification</p>
           <p className="text-xs sm:text-sm font-light">{time}</p>
         </div>
         <p className="pt-1 sm:pt-0.5 text-xs sm:text-sm text-dull">

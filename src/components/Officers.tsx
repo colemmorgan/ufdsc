@@ -9,45 +9,52 @@ type Officer = {
 
 const officers: Officer[] = [
   {
-    name: "Moinak Dey",
-    role: "President",
-    img: "/photos/officers/moinak-dey.jpg",
-    linkedin: "https://www.linkedin.com/in/moinakdey/",
-  },
-  {
     name: "Harshil Pahuja",
-    role: "Vice President",
-    img: "/photos/officers/harshil-pahuja.jfif",
+    role: "President",
+    img: "/photos/officers/harshil_profile.jpg",
     linkedin: "https://www.linkedin.com/in/harshil-pahuja/",
   },
   {
-    name: "Oliver Jen",
+    name: "Sargam Thakur",
+    role: "Vice President",
+    img: "/photos/officers/sargam.png",
+    linkedin: "https://www.linkedin.com/in/sargam-thakur/",
+  },
+  {
+    name: "Krish Sahuja",
     role: "Treasurer",
-    img: "/photos/officers/oliver-jen.jfif",
-    linkedin: "https://www.linkedin.com/in/oliver-jen-ufl/",
+    img: "/photos/officers/KrishSal.jpg",
+    linkedin: "https://www.linkedin.com/in/krish-saluja/",
   },
   {
-    name: "Paraman Galipalli",
+    name: "Jack Harris",
     role: "Technical Lead",
-    img: "/photos/officers/paraman-galipalli.jfif",
-    linkedin: "https://www.linkedin.com/in/paraman-galipalli-754b80249/",
+    img: "/photos/officers/JackHar.JPG",
+    linkedin: "https://www.linkedin.com/in/jack-harris-uf/",
   },
   {
-    name: "CJ Alexander",
+    name: "Andrew Chuang-Saladin",
     role: "Technical Lead",
-    img: "/photos/officers/cj-alexander.jfif",
-    linkedin: "https://www.linkedin.com/in/cj-alexander/",
+    img: "/photos/officers/Andrew.JPG",
+    linkedin: "https://www.linkedin.com/in/andrew-cs/",
   },
   {
-    name: "Mayank Garg",
-    role: "Advertising Lead",
-    img: "/photos/officer-img-placeholder.png",
+    name: "Sivan Pushpagiri",
+    role: "Technical Lead",
+    img: "/photos/officers/Sivan.jpg",
+    linkedin: "https://www.linkedin.com/in/sivan-pushpagiri-554465249/",
   },
   {
-    name: "Cole Morgan",
-    role: "Webmaster",
-    img: "/photos/officers/cole-morgan.jpg",
-    linkedin: "https://www.linkedin.com/in/cole-morgan-/",
+    name: "Catherine Kennedy",
+    role: "Social Lead",
+    img: "/photos/officers/CatherineKennedy.PNG",
+    linkedin: "https://www.linkedin.com/in/catherinelykennedy/",
+  },
+  {
+    name: "Mishka Sonavadekar",
+    role: "Marketing Lead",
+    img: "/photos/officers/MSonavadekar.jpg",
+    linkedin: "https://www.linkedin.com/in/mishka-sonavadekar/",
   },
 ];
 
@@ -62,13 +69,6 @@ export default function Officers() {
         {officers.map((officer) => (
           <Officer key={officer.name} officer={officer} />
         ))}
-
-        <div className="flex h-full flex-col items-center justify-center rounded-lg border border-gray bg-white px-4 py-6 shadow-sm">
-          <p className="text-center text-sm text-dull">
-            More roles coming soon. Make sure to watch for announcements on
-            Discord.
-          </p>
-        </div>
       </div>
     </div>
   );
