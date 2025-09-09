@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaDiscord } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
 
 export default function Nav() {
@@ -37,9 +37,9 @@ export default function Nav() {
             <a
               href="https://discord.gg/waWVF8rHP8"
               target="_blank"
-              className="rounded-md bg-blue px-4 pb-1.5 pt-2 text-xs text-white sm:py-2 sm:text-sm"
-            >
-              UF GDG Discord
+              className="rounded-md bg-blue px-4 pb-1.5 pt-2 text-xs text-white sm:py-2 sm:text-sm flex items-center justify-center"
+              >
+              <FaDiscord className="text-lg" />
             </a>
             <button
               className="text-2xl lg:hidden"
