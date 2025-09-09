@@ -35,7 +35,7 @@ const officers: Officer[] = [
   {
     name: "Andrew Chuang-Saladin",
     role: "Technical Lead",
-    img: "/photos/officers/Andrew.JPG",
+    img: "/photos/officers/AndrewChuang.jpg",
     linkedin: "https://www.linkedin.com/in/andrew-cs/",
   },
   {

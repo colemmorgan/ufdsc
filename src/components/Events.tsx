@@ -10,6 +10,19 @@ export default function Events() {
       <p className="pt-3 text-center sm:text-lg text-dull px-3">
         We have something fun for everyone.
       </p>
+      <div className="mt-12">
+        <h3 className="cal text-center text-2xl sm:text-3xl mb-6">Upcoming Events</h3>
+        <div className="max-w-4xl mx-auto">
+          <iframe
+            src="https://calendar.google.com/calendar/embed?src=303784ca63b07964c340aad0e06b459563952f46d6cc00ca8a428835c0a1d1b2%40group.calendar.google.com&ctz=America%2FNew_York"
+            style={{ border: 0 }}
+            width="100%"
+            height="600"    
+            className="rounded-lg shadow-lg"
+          ></iframe>
+        </div>
+      </div>
+
       <div className="mt-8 grid lg:grid-cols-2 gap-2 lg:gap-8 tracking-wide">
         <div className="flex flex-col justify-between rounded-xl border border-gray bg-white p-6 lg:p-8 shadow-sm">
           <div>
