@@ -17,9 +17,7 @@ export default function Events() {
             src="https://calendar.google.com/calendar/embed?src=303784ca63b07964c340aad0e06b459563952f46d6cc00ca8a428835c0a1d1b2%40group.calendar.google.com&ctz=America%2FNew_York"
             style={{ border: 0 }}
             width="100%"
-            height="600"
-            frameBorder="0"
-            scrolling="no"
+            height="600"    
             className="rounded-lg shadow-lg"
           ></iframe>
         </div>
