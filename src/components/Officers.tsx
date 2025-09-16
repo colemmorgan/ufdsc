@@ -21,7 +21,7 @@ const officers: Officer[] = [
     linkedin: "https://www.linkedin.com/in/sargam-thakur/",
   },
   {
-    name: "Krish Sahuja",
+    name: "Krish Saluja",
     role: "Treasurer",
     img: "/photos/officers/KrishSal.jpg",
     linkedin: "https://www.linkedin.com/in/krish-saluja/",
