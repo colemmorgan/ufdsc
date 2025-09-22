@@ -50,7 +50,7 @@ export default function About() {
               </figure>
               <figure className="rounded-full border-2 border-green">
                 <img
-                  src="/photos/officers/Andrew.JPG"
+                  src="/photos/officers/AndrewChuang.jpg"
                   alt=""
                   className="h-14 w-14 rounded-full"
                 />
