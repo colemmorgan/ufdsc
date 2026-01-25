@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import About from "./components/About";
 import CTA from "./components/CTA";
 import Events from "./components/Events";
@@ -22,6 +23,7 @@ export default function App() {
         </div>
         <Footer />
       </div>
+      <Analytics />
     </>
   );
 }
