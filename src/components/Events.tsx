@@ -14,7 +14,7 @@ export default function Events() {
         <h3 className="cal text-center text-2xl sm:text-3xl mb-6">Upcoming Events</h3>
         <div className="max-w-4xl mx-auto">
           <iframe
-            src="https://calendar.google.com/calendar/embed?src=303784ca63b07964c340aad0e06b459563952f46d6cc00ca8a428835c0a1d1b2%40group.calendar.google.com&ctz=America%2FNew_York"
+            src="https://calendar.google.com/calendar/embed?src=c1f1cf64c093e67ccbc9fe05878e89b70c0fef8b491965370160feffab0bb7e9%40group.calendar.google.com&ctz=America%2FNew_York"
             style={{ border: 0 }}
             width="100%"
             height="600"    
